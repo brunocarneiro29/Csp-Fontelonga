@@ -1002,5 +1002,16 @@ document.querySelector('a[href="#mural"]').addEventListener('click', function(e)
 });
 </script>
 <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.querySelectorAll('#offcanvasMenu .nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      const offcanvasElement = document.getElementById('offcanvasMenu');
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+      if(bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
+    });
+  });
+</script>
 </body>
 </html>
