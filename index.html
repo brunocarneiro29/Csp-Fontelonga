@@ -31,6 +31,69 @@
     margin: 0 auto; /* 🟦 Esta linha centraliza horizontalmente */
   }
 </style>
+/* Menu escondido por padrão no mobile */
+.navmenu {
+  display: none;
+}
+
+/* Quando o menu estiver ativo, mostra-o */
+.navmenu.active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 75%;
+  height: 100vh;
+  padding: 2rem;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+/* Botão do menu */
+.mobile-nav-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: block;
+}
+
+/* No desktop, mostra o menu sempre e esconde o botão */
+@media (min-width: 1200px) {
+  .navmenu {
+    display: flex !important;
+    position: static;
+    height: auto;
+    background: none;
+    padding: 0;
+  }
+  .mobile-nav-toggle {
+    display: none;
+  }
+}
+
+/* Ajustar logo e slogan para ficarem lado a lado no mobile */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.sitename {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.company-badge {
+  flex-basis: 100%;
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #007bff;
+}
+
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -80,20 +143,17 @@
 
   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
-        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contas">Contas de Gerência</a></li>
-        <li class="nav-item"><a class="nav-link" href="#mural">Mural das Atividades</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
-      </ul>
-    </div>
-  </div>
+     <nav class="navmenu" id="navmenu">
+  <ul>
+    <li><a class="active" href="#hero">Home</a></li>
+    <li><a href="#sobre">Sobre nós</a></li>
+    <li><a href="servicos.html">Serviços</a></li>
+    <li><a href="#contas">Contas de Gerência</a></li>
+    <li><a href="#mural">Mural das Atividades</a></li>
+    <li><a href="#contact">Contactos</a></li>
+  </ul>
+</nav>
+<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 
   <a class="btn-getstarted" href="donativos.html#about">Donativos</a>
 </nav>
@@ -1013,5 +1073,24 @@ document.querySelector('a[href="#mural"]').addEventListener('click', function(e)
     });
   });
 </script>
+<script>
+  // Seleciona o botão do menu e os links do menu
+  const menuToggle = document.querySelector('.mobile-nav-toggle');
+  const navMenu = document.getElementById('navmenu');
+  const navLinks = navMenu.querySelectorAll('a');
+
+  // Função para alternar a visibilidade do menu
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active');
+  });
+
+  // Fecha o menu ao clicar em qualquer link do menu
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+    });
+  });
+</script>
+
 </body>
 </html>
