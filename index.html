@@ -123,45 +123,39 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 </head>
-<header class="header d-flex align-items-center fixed-top" id="header">
-  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-    
-    <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
+<header class="header fixed-top" id="header">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+    <!-- Logo e título -->
+    <a class="logo d-flex align-items-center" href="index.html" style="gap: 10px;">
       <img src="assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" style="height: 40px; width: auto; display: block;">
       <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
     </a>
 
-  <nav class="navbar navbar-expand-xl">
-  <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
-    <img src="assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" style="height: 40px; width: auto; display: block;">
-    <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
-  </a>
+    <!-- Botão hamburguer para menu mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" 
+      aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <!-- Menu -->
+    <nav class="collapse navbar-collapse" id="navbarMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
+        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contas">Contas de Gerência</a></li>
+        <li class="nav-item"><a class="nav-link" href="#mural">Mural das Atividades</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
+      </ul>
+    </nav>
 
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-     <nav class="navmenu" id="navmenu">
-  <ul>
-    <li><a class="active" href="#hero">Home</a></li>
-    <li><a href="#sobre">Sobre nós</a></li>
-    <li><a href="servicos.html">Serviços</a></li>
-    <li><a href="#contas">Contas de Gerência</a></li>
-    <li><a href="#mural">Mural das Atividades</a></li>
-    <li><a href="#contact">Contactos</a></li>
-  </ul>
-</nav>
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-
-  <a class="btn-getstarted" href="donativos.html#about">Donativos</a>
-</nav>
-
-    <a class="btn-getstarted" href="donativos.html#about">Donativos</a>
+    <!-- Botão Donativos -->
+    <a class="btn btn-primary ms-3" href="donativos.html#about">Donativos</a>
 
   </div>
 </header>
+
 <main class="main">
 <!-- Hero Section -->
 <section class="hero section" id="hero">
@@ -1091,6 +1085,9 @@ document.querySelector('a[href="#mural"]').addEventListener('click', function(e)
     });
   });
 </script>
+<!-- No final do body, antes de fechar -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 
 </body>
 </html>
