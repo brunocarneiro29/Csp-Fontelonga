@@ -61,26 +61,34 @@
   ======================================================== -->
 </head>
 <header class="header d-flex align-items-center fixed-top" id="header">
-  <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    
     <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
-  <img src="assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" style="height: 40px; width: auto; display: block;">
-  <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
-</a>
-<nav class="navmenu" id="navmenu">
-<ul>
-<ul>
-  <li><a class="active" href="#hero">Home</a></li>
-  <li><a href="#sobre">Sobre nós</a></li>
-  <li><a href="servicos.html">Serviços</a></li>
-  <li><a href="#contas">Contas de Gerência</a></li>
-  <li><a href="#mural">Mural das Atividades</a></li>
-  <li><a href="#contact">Contactos</a></li>
-</ul>
+      <img src="assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" style="height: 40px; width: auto; display: block;">
+      <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
+    </a>
 
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-</nav>
-<a class="btn-getstarted" href="donativos.html#about">Donativos</a>
-</div>
+    <nav class="navbar navbar-expand-xl p-0">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-0">
+          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contas">Contas de Gerência</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mural">Mural das Atividades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <a class="btn-getstarted" href="donativos.html#about">Donativos</a>
+
+  </div>
 </header>
 <main class="main">
 <!-- Hero Section -->
@@ -981,5 +989,6 @@ document.querySelector('a[href="#mural"]').addEventListener('click', function(e)
   document.getElementById('mural').scrollIntoView({ behavior: 'smooth' });
 });
 </script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
