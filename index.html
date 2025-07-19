@@ -1,50 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-PT">
+
+<html lang="en">
+<style>
+<style>
+  .carousel-caption {
+    background: none !important;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .titulo-slide {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+
+  .barra-azul {
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+    margin: 0 auto; /* 🟦 Esta linha centraliza horizontalmente */
+  }
+</style>
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Centro Social Paroquial de Fontelonga</title>
-
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <link href="./assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="./assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="./assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="./assets/css/main.css" rel="stylesheet">
-<style>html { scroll-behavior: smooth; }</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centro Social Paroquial de Fontelonga</title>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon"/>
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet"/>
+<!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-  <header class="navbar navbar-expand-xl navbar-light bg-light fixed-top shadow" id="header">
-    <div class="container-fluid container-xl">
-      <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
-        <img src="./assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" height="40">
-        <h1 class="sitename m-0" style="font-size:1.25rem; line-height:1.2;">Centro Social Paroquial de Fontelonga</h1>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <nav class="collapse navbar-collapse" id="navbarMenu">
-        <ul class="navbar-nav ms-auto mb-2 mb-xl-0">
-          <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre nós</a></li>
-          <li class="nav-item"><a class="nav-link" href="#features">Serviços</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contas">Contas de Gerência</a></li>
-          <li class="nav-item"><a class="nav-link" href="#mural">Mural das Atividades</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contactos</a></li>
-          <li class="nav-item"><a class="btn btn-primary ms-xl-3" href="donativos.html#about">Donativos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<header class="header d-flex align-items-center fixed-top" id="header">
+  <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
+  <img src="assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" style="height: 40px; width: auto; display: block;">
+  <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
+</a>
+<nav class="navmenu" id="navmenu">
+<ul>
+<ul>
+  <li><a class="active" href="#hero">Home</a></li>
+  <li><a href="#sobre">Sobre nós</a></li>
+  <li><a href="servicos.html">Serviços</a></li>
+  <li><a href="#contas">Contas de Gerência</a></li>
+  <li><a href="#mural">Mural das Atividades</a></li>
+  <li><a href="#contact">Contactos</a></li>
+</ul>
 
-  <!-- Corrigir rolagem para a secção de serviços -->
-  <section id="features" class="features section" style="scroll-margin-top: 100px;">
-    <!-- Conteúdo da secção de serviços aqui -->
-  </section>
-
+<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+</nav>
+<a class="btn-getstarted" href="donativos.html#about">Donativos</a>
+</div>
+</header>
 <main class="main">
 <!-- Hero Section -->
 <section class="hero section" id="hero">
@@ -76,6 +113,19 @@
 
 </div>
 </div>
+</div>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<div class="col-lg-6">
+<div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+<img alt="Hero Image" class="img-fluid" src="assets/img/illustration-1.webp"/>
+<div class="customers-badge">
+<div class="customer-avatars">
+<img alt="Customer 1" class="avatar" src="assets/img/avatar-1.webp"/>
+<img alt="Customer 2" class="avatar" src="assets/img/avatar-2.webp"/>
+<img alt="Customer 3" class="avatar" src="assets/img/avatar-3.webp"/>
+<img alt="Customer 4" class="avatar" src="assets/img/avatar-4.webp"/>
+<img alt="Customer 5" class="avatar" src="assets/img/avatar-5.webp"/>
+<span class="avatar more">12+</span>
 </div>
 <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 </div>
@@ -204,7 +254,7 @@
 </ul>
 </div>
 <div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="Imagem de Idosos" class="img-fluid rounded shadow my-4" src="./assets/img/idosos.jpg" style="width: 100%; max-width: 700px;"/>
+<img alt="Imagem de Idosos" class="img-fluid rounded shadow my-4" src="assets/img/idosos.jpg" style="width: 100%; max-width: 700px;"/>
 </div>
 </div>
 </div><!-- End tab content item -->
@@ -225,7 +275,7 @@
 </ul>
 </div>
 <div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="Centro de Dia" class="img-fluid rounded shadow" src="./assets/img/centro de dia.jpg" style="max-height: 400px; width: auto;">
+<img alt="Centro de Dia" class="img-fluid rounded shadow" src="assets/img/centro de dia.jpg" style="max-height: 400px; width: auto;">
 </img></div>
 </div>
 </div><!-- End tab content item -->
@@ -246,7 +296,7 @@
 </ul>
 </div>
 <div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="" class="img-fluid" src="./assets/img/sad.jpg"/>
+<img alt="" class="img-fluid" src="assets/img/sad.jpg"/>
 </div>
 </div>
 </div><!-- End tab content item -->
@@ -287,7 +337,7 @@
 <div class="col-md-6 mb-4">
 <div class="card p-4 h-100 shadow-sm border-0">
 <div class="d-flex align-items-center mb-3">
-<img alt="Pe. Humberto Coelho" class="rounded-circle me-3" height="70" src="./assets/img/pe.jpg" style="object-fit: cover;" width="70"/>
+<img alt="Pe. Humberto Coelho" class="rounded-circle me-3" height="70" src="assets/img/pe.jpg" style="object-fit: cover;" width="70"/>
 <div>
 <h5 class="mb-0">Pe. Humberto Coelho</h5>
 <small>Presidente da IPSS Centro Social Paroquial de Fontelonga</small>
@@ -307,7 +357,7 @@
 <div class="col-md-6 mb-4">
 <div class="card p-4 h-100 shadow-sm border-0">
 <div class="d-flex align-items-center mb-3">
-<img alt="Maria Fernandes" class="rounded-circle me-3" height="70" src="./assets/img/cremilde.jpg" style="object-fit: cover;" width="70"/>
+<img alt="Maria Fernandes" class="rounded-circle me-3" height="70" src="assets/img/cremilde.jpg" style="object-fit: cover;" width="70"/>
 <div>
 <h5 class="mb-0">Cremilde Morais<h5/>
 <small>Utente</small>
@@ -344,71 +394,71 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Ata do Conselho Fiscal
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/ata conselho fiscal.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/ata conselho fiscal.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/ata conselho fiscal.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/ata conselho fiscal.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Ata da Direção
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/ata direção.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/ata direção.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/ata direção.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/ata direção.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Balancete Geral 12
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnBalanceteGeral12.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnBalanceteGeral12.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnBalanceteGeral12.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnBalanceteGeral12.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Balancete Geral 13
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnBalanceteGeral13.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnBalanceteGeral13.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnBalanceteGeral13.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnBalanceteGeral13.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Balancete Geral 14
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnBalanceteGeral14.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnBalanceteGeral14.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnBalanceteGeral14.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnBalanceteGeral14.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Demonstração Financeira – Balanço
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnDemoFinanceirasBalanco.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnDemoFinanceirasBalanco.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasBalanco.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasBalanco.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Demonstração Financeira – Fluxo de Caixa
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnDemoFinanceirasFluxoCaixa.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnDemoFinanceirasFluxoCaixa.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasFluxoCaixa.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasFluxoCaixa.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Resultados por Funções
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnDemoFinanceirasResultadosFuncoes.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnDemoFinanceirasResultadosFuncoes.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosFuncoes.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosFuncoes.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Resultados por Natureza
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/rptCnDemoFinanceirasResultadosNatureza.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/rptCnDemoFinanceirasResultadosNatureza.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosNatureza.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosNatureza.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
                 Anexo ao Relatório de Contas
                 <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas e contas 2017/Anexo Relatorio de Contas FL 2017.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas e contas 2017/Anexo Relatorio de Contas FL 2017.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/Anexo Relatorio de Contas FL 2017.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/Anexo Relatorio de Contas FL 2017.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -429,64 +479,64 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balanço Financeiro
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/1rptCnDemoFinanceirasBalanco.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/1rptCnDemoFinanceirasBalanco.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/1rptCnDemoFinanceirasBalanco.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/1rptCnDemoFinanceirasBalanco.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Resultados por Natureza
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/2rptCnDemoFinanceirasResultadosNaturezas.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/2rptCnDemoFinanceirasResultadosNaturezas.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/2rptCnDemoFinanceirasResultadosNaturezas.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/2rptCnDemoFinanceirasResultadosNaturezas.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Resultados por Funções - Lar de Idosos
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/3rptCnDemoFinanceirasResultadosFuncoes900101.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/3rptCnDemoFinanceirasResultadosFuncoes900101.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/3rptCnDemoFinanceirasResultadosFuncoes900101.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/3rptCnDemoFinanceirasResultadosFuncoes900101.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Resultados por Funções - Apoio Domiciliário
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/4rptCnDemoFinanceirasResultadosFuncoes900103.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/4rptCnDemoFinanceirasResultadosFuncoes900103.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/4rptCnDemoFinanceirasResultadosFuncoes900103.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/4rptCnDemoFinanceirasResultadosFuncoes900103.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Resultados por Funções - Centro de Dia
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/5rptCnDemoFinanceirasResultadosFuncoes900104.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/5rptCnDemoFinanceirasResultadosFuncoes900104.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/5rptCnDemoFinanceirasResultadosFuncoes900104.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/5rptCnDemoFinanceirasResultadosFuncoes900104.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Fluxos de Caixa
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/6rptCnDemoFinanceirasFluxoCaixa.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/6rptCnDemoFinanceirasFluxoCaixa.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/6rptCnDemoFinanceirasFluxoCaixa.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/6rptCnDemoFinanceirasFluxoCaixa.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balancete Geral 12
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/7rptCnBalanceteGeral12.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/7rptCnBalanceteGeral12.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/7rptCnBalanceteGeral12.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/7rptCnBalanceteGeral12.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balancete Geral 13
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/8rptCnBalanceteGeral13.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/8rptCnBalanceteGeral13.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/8rptCnBalanceteGeral13.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/8rptCnBalanceteGeral13.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balancete Geral 14
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2018/9rptCnBalanceteGeral14.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2018/9rptCnBalanceteGeral14.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/9rptCnBalanceteGeral14.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/9rptCnBalanceteGeral14.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -505,71 +555,71 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Anexo às Demonstrações Financeiras
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/2AnexoAsDemonstracoesFinanceiras2019.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/2AnexoAsDemonstracoesFinanceiras2019.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/2AnexoAsDemonstracoesFinanceiras2019.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/2AnexoAsDemonstracoesFinanceiras2019.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balancete Geral
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Balancete Geral.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Balancete Geral.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balancete Geral.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balancete Geral.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balancete Geral 2
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Balancete Geral 2.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Balancete Geral 2.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balancete Geral 2.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balancete Geral 2.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balancete Geral 3
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Balancete Geral 3.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Balancete Geral 3.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balancete Geral 3.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balancete Geral 3.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Balanço
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Balanço.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Balanço.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balanço.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balanço.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
          Resultado por Funções - Apoio Domiciliário
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Demonstração dos Resultados por Funções - Apoio Domiciliário.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Demonstração dos Resultados por Funções - Apoio Domiciliário.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Apoio Domiciliário.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Apoio Domiciliário.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
          Resultado por Funções - Centro de Dia
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Demonstração dos Resultados por Funções - Centro de Dia.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Demonstração dos Resultados por Funções - Centro de Dia.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Centro de Dia.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Centro de Dia.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
          Resultado por Funções - Lar de Idosos
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Demonstração dos Resultados por Funções - Lar de idosos.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Demonstração dos Resultados por Funções - Lar de idosos.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Lar de idosos.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Lar de idosos.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
          Demonstração dos Resultados por Naturezas
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Demonstração dos Resultados por Naturezas.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Demonstração dos Resultados por Naturezas.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Naturezas.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Naturezas.pdf">Download</a>
 </div>
 </li>
 <li class="list-group-item d-flex justify-content-between align-items-center">
          Fluxos de Caixa
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2019/Fluxos de caixa.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2019/Fluxos de caixa.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Fluxos de caixa.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Fluxos de caixa.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -590,8 +640,8 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Relatório de Contas 2020
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2020/Contas 2020.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2020/Contas 2020.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2020/Contas 2020.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2020/Contas 2020.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -612,8 +662,8 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Relatório de Contas 2021
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2021/Contas 2021.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2021/Contas 2021.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2021/Contas 2021.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2021/Contas 2021.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -634,8 +684,8 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Relatório de Contas 2022
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2022/Contas 2022.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2022/Contas 2022.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2022/Contas 2022.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2022/Contas 2022.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -656,8 +706,8 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Relatório de Contas 2023
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2023/Contas 2023.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2023/Contas 2023.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2023/Contas 2023.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2023/Contas 2023.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -678,8 +728,8 @@
 <li class="list-group-item d-flex justify-content-between align-items-center">
           Relatório de Contas 2024
           <div>
-<a class="btn btn-primary btn-sm me-2" href="./assets/atas-contas-2024/Contas 2024.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="./assets/atas-contas-2024/Contas 2024.pdf">Download</a>
+<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2024/Contas 2024.pdf" target="_blank">Ver</a>
+<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2024/Contas 2024.pdf">Download</a>
 </div>
 </li>
 </ul>
@@ -697,7 +747,7 @@
       <div class="carousel-inner">
         <!-- Slide 1 -->
         <div class="carousel-item active">
-          <img alt="Santos Populares no Centro" class="d-block w-100 img-fluid" src="./assets/img/s-joao-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Santos Populares no Centro" class="d-block w-100 img-fluid" src="assets/img/s-joao-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption">
             <h5 class="titulo-slide">São João 2025</h5>
             <div class="barra-azul"></div>
@@ -705,7 +755,7 @@
         </div>
         <!-- Slide 2 -->
         <div class="carousel-item">
-          <img alt="Visita a Santiago de Compostela 2025" class="d-block w-100 img-fluid" src="./assets/img/santiago-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Visita a Santiago de Compostela 2025" class="d-block w-100 img-fluid" src="assets/img/santiago-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Visita a Santiago de Compostela 2025</h5>
             <div class="barra-azul"></div>
@@ -713,7 +763,7 @@
         </div>
         <!-- Slide 3 -->
         <div class="carousel-item">
-          <img alt="Passeio de Barco 2025" class="d-block w-100 img-fluid" src="./assets/img/barco.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Passeio de Barco 2025" class="d-block w-100 img-fluid" src="assets/img/barco.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Passeio de Barco 2025</h5>
             <div class="barra-azul"></div>
@@ -721,7 +771,7 @@
         </div>
         <!-- Slide 4 -->
         <div class="carousel-item">
-          <img alt="Dia do Pai 2025" class="d-block w-100 img-fluid" src="./assets/img/dia-do-pai-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Dia do Pai 2025" class="d-block w-100 img-fluid" src="assets/img/dia-do-pai-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Dia do Pai 2025</h5>
             <div class="barra-azul"></div>
@@ -729,7 +779,7 @@
         </div>
         <!-- Slide 5 -->
         <div class="carousel-item">
-          <img alt="Cortejo de Carnaval 2025" class="d-block w-100 img-fluid" src="./assets/img/cortejo-carnaval-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Cortejo de Carnaval 2025" class="d-block w-100 img-fluid" src="assets/img/cortejo-carnaval-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Cortejo de Carnaval 2025</h5>
             <div class="barra-azul"></div>
@@ -737,7 +787,7 @@
         </div>
         <!-- Slide 6 -->
         <div class="carousel-item">
-          <img alt="Visita à Rádio Ansiães 2025" class="d-block w-100 img-fluid" src="./assets/img/radio-ansiaes-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Visita à Rádio Ansiães 2025" class="d-block w-100 img-fluid" src="assets/img/radio-ansiaes-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Visita à Rádio Ansiães 2025</h5>
             <div class="barra-azul"></div>
@@ -745,7 +795,7 @@
         </div>
         <!-- Slide 7 -->
         <div class="carousel-item">
-          <img alt="Missão País 2025" class="d-block w-100 img-fluid" src="./assets/img/missao-pais-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Missão País 2025" class="d-block w-100 img-fluid" src="assets/img/missao-pais-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Missão País 2025</h5>
             <div class="barra-azul"></div>
@@ -753,7 +803,7 @@
         </div>
         <!-- Slide 8 -->
         <div class="carousel-item">
-          <img alt="Cantar dos Reis 2025" class="d-block w-100 img-fluid" src="./assets/img/cantar-reis-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <img alt="Cantar dos Reis 2025" class="d-block w-100 img-fluid" src="assets/img/cantar-reis-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
           <div class="carousel-caption text-center custom-caption">
             <h5 class="titulo-slide">Cantar dos Reis 2025</h5>
             <div class="barra-azul"></div>
@@ -909,14 +959,14 @@
 <i class="bi bi-arrow-up-short"></i>
 </a>
 <!-- Vendor JS Files -->
-<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/vendor/php-email-form/validate.js"></script>
-<script src="./assets/vendor/aos/aos.js"></script>
-<script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="./assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 <!-- Main JS File -->
-<script src="./assets/js/main.js"></script>
+<script src="assets/js/main.js"></script>
 <!-- Bootstrap CDN (opcional se já estiver incluído acima) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
@@ -931,10 +981,5 @@ document.querySelector('a[href="#mural"]').addEventListener('click', function(e)
   document.getElementById('mural').scrollIntoView({ behavior: 'smooth' });
 });
 </script>
-<script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="./assets/vendor/aos/aos.js"></script>
-<script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="./assets/js/main.js"></script>
 </body>
 </html>
