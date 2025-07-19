@@ -1,56 +1,55 @@
-<!DOCTYPE html>
-<html lang="pt-PT">
 
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Centro Social Paroquial de Fontelonga</title>
-
-  <!-- Ficheiros CSS -->
+  <title>Centro Social Fontelonga</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Menu -->
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/cspf.png" alt="">
-        <h1 class="ms-2">Centro Social Paroquial de Fontelonga</h1>
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#sobre">Sobre nós</a></li>
-          <li><a href="#features">Serviços</a></li>
-          <li><a href="#contas">Contas de Gerência</a></li>
-          <li><a href="#mural">Mural das Atividades</a></li>
-          <li><a href="#contact">Contactos</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-      <a class="btn-getstarted" href="donativos.html#about">Donativos</a>
-    </div>
-  </header>
 
-  <main>
-    <!-- Secção de Serviços com ID correto -->
-    <section id="features" class="features section" style="scroll-margin-top: 100px;">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Os Nossos Serviços</h2>
-            <p>Descrição detalhada dos serviços prestados.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center">
+      <img src="assets/img/logo.png" alt="">
+      <span>CS Fontelonga</span>
+    </a>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto" href="#hero">Início</a></li>
+        <li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
+        <li><a class="nav-link scrollto" href="#features">Serviços</a></li>
+        <li><a class="nav-link scrollto" href="#portfolio">Contas de Gerência</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
+        <li><a class="getstarted scrollto" href="#donativos">Donativos</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav>
+  </div>
+</header>
+
+<!-- ======= Hero Section ======= -->
+<section id="hero">
+  <!-- conteúdo da secção -->
+</section>
+
+<!-- ======= Features Section (Serviços) ======= -->
+<section id="features" style="scroll-margin-top: 100px;">
+  <div class="container">
+    <div class="section-title">
+      <h2>Serviços</h2>
+      <p>Descrição dos serviços prestados pelo centro social.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======= Contact Section ======= -->
+<section id="contact">
+  <!-- conteúdo de contactos -->
+</section>
 <main class="main">
 <!-- Hero Section -->
 <section class="hero section" id="hero">
@@ -945,21 +944,23 @@ document.querySelector('a[href="#mural"]').addEventListener('click', function(e)
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/js/main.js"></script>
 
-  <!-- Scroll suave personalizado -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-          const target = document.querySelector(this.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scroll suave -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
       });
     });
-  </script>
+  });
+</script>
 
 </body>
-
 </html>
+
