@@ -1,65 +1,87 @@
-
 <!DOCTYPE html>
 
-<html lang="pt">
+<html lang="en">
+<style>
+<style>
+  .carousel-caption {
+    background: none !important;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
+
+  .titulo-slide {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+
+  .barra-azul {
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+    margin: 0 auto; /* 🟦 Esta linha centraliza horizontalmente */
+  }
+</style>
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Centro Social Fontelonga</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <style>html { scroll-behavior: smooth; }</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centro Social Paroquial de Fontelonga</title>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+<!-- Favicons -->
+<link href="assets/img/favicon.png" rel="icon"/>
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+<!-- Vendor CSS Files -->
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+<!-- Main CSS File -->
+<link href="assets/css/main.css" rel="stylesheet"/>
+<!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-<!-- ======= Header ======= -->
-<header class="header fixed-top" id="header">
-<div class="container d-flex align-items-center justify-content-between">
-<a class="logo d-flex align-items-center" href="index.html">
-<img alt="" src="assets/img/logo.png"/>
-<span>CS Fontelonga</span>
+<header class="header d-flex align-items-center fixed-top" id="header">
+  <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
+  <img src="assets/img/cspf.png" alt="Logo Centro Social Paroquial de Fontelonga" style="height: 40px; width: auto; display: block;">
+  <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
 </a>
-<nav class="navbar" id="navbar">
+<nav class="navmenu" id="navmenu">
 <ul>
-<li><a class="nav-link scrollto" href="#hero">Início</a></li>
-<li><a class="nav-link scrollto" href="#about">Sobre nós</a></li>
-<li><a class="nav-link scrollto" href="#servicos">Serviços</a></li>
-<li><a class="nav-link scrollto" href="#portfolio">Contas de Gerência</a></li>
-<li><a class="nav-link scrollto" href="#contact">Contactos</a></li>
-<li><a class="getstarted scrollto" href="#donativos">Donativos</a></li>
+<ul>
+  <li><a class="active" href="#hero">Home</a></li>
+  <li><a href="#sobre">Sobre nós</a></li>
+  <li><a href="servicos.html">Serviços</a></li>
+  <li><a href="#contas">Contas de Gerência</a></li>
+  <li><a href="#mural">Mural das Atividades</a></li>
+  <li><a href="#contact">Contactos</a></li>
 </ul>
-<i class="bi bi-list mobile-nav-toggle"></i>
+
+<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </nav>
+<a class="btn-getstarted" href="donativos.html#about">Donativos</a>
 </div>
 </header>
-<!-- ======= Hero Section ======= -->
-<section id="hero">
-<!-- conteúdo da secção -->
-</section>
-<!-- ======= Features Section (Serviços) ======= -->
-<section id="features" style="scroll-margin-top: 100px;">
-<div class="container">
-<div class="section-title">
-<h2>Serviços</h2>
-<p>Descrição dos serviços prestados pelo centro social.</p>
-</div>
-</div>
-</section>
-<!-- ======= Contact Section ======= -->
-<section id="contact">
-<!-- conteúdo de contactos -->
-</section>
 <main class="main">
 <!-- Hero Section -->
 <section class="hero section" id="hero">
@@ -88,14 +110,28 @@
   </p>
 </div>
 <div class="hero-buttons">
+
 </div>
 </div>
+</div>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<div class="col-lg-6">
+<div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+<img alt="Hero Image" class="img-fluid" src="assets/img/illustration-1.webp"/>
+<div class="customers-badge">
+<div class="customer-avatars">
+<img alt="Customer 1" class="avatar" src="assets/img/avatar-1.webp"/>
+<img alt="Customer 2" class="avatar" src="assets/img/avatar-2.webp"/>
+<img alt="Customer 3" class="avatar" src="assets/img/avatar-3.webp"/>
+<img alt="Customer 4" class="avatar" src="assets/img/avatar-4.webp"/>
+<img alt="Customer 5" class="avatar" src="assets/img/avatar-5.webp"/>
+<span class="avatar more">12+</span>
 </div>
 <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
 </div>
 </div>
-
-
+</div>
+</div>
 <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
 <div class="col-lg-3 col-md-6">
 <div class="stat-item">
@@ -173,9 +209,9 @@
 </div>
 </div>
 </section>
-</div></section><!-- /About Section -->
+</div></div></section><!-- /About Section -->
 <!-- Features Section -->
-<section class="features section" id="servicos">
+<section class="features section" id="features">
 <!-- Section Title -->
 <div class="container section-title" data-aos="fade-up">
 <h2>Serviços</h2>
@@ -218,8 +254,8 @@
 </ul>
 </div>
 <div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="Imagem de Idosos" class="img-fluid rounded shadow my-4" src="assets/img/idosos.jpg" style="width: 100%; max-width: 700px;">
-</img></div>
+<img alt="Imagem de Idosos" class="img-fluid rounded shadow my-4" src="assets/img/idosos.jpg" style="width: 100%; max-width: 700px;"/>
+</div>
 </div>
 </div><!-- End tab content item -->
 <div class="tab-pane fade" id="features-tab-2">
@@ -239,8 +275,8 @@
 </ul>
 </div>
 <div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="Centro de Dia" class="img-fluid rounded shadow" src="assets/img/centro de dia.jpg" style="max-height: 400px; width: auto;"/>
-</div>
+<img alt="Centro de Dia" class="img-fluid rounded shadow" src="assets/img/centro de dia.jpg" style="max-height: 400px; width: auto;">
+</img></div>
 </div>
 </div><!-- End tab content item -->
 <div class="tab-pane fade" id="features-tab-3">
@@ -323,9 +359,9 @@
 <div class="d-flex align-items-center mb-3">
 <img alt="Maria Fernandes" class="rounded-circle me-3" height="70" src="assets/img/cremilde.jpg" style="object-fit: cover;" width="70"/>
 <div>
-<h5 class="mb-0">Cremilde Morais<h5></h5>
+<h5 class="mb-0">Cremilde Morais<h5/>
 <small>Utente</small>
-</h5></div>
+</div>
 </div>
 <p style="text-align: justify;">
             O Centro Social Paroquial de Fontelonga não é um Lar de velhos. É uma casa de família onde me sinto muito feliz. sou bem tratada e acarinhada por todos que aqui trabalham. Aqui há muito amor.
@@ -336,7 +372,7 @@
 </div>
 </div>
 </div>
-</section>
+</section>  
 <section class="section bg-light py-5" id="contas">
 <div class="container">
 <div class="section-title text-center mb-4">
@@ -701,91 +737,92 @@
 </div>
 </div>
 <section class="mural-das-atividades section py-5 bg-light" id="mural">
-<div class="container">
-<div class="text-center mb-4">
-<h2 class="fw-bold">Mural das Atividades</h2>
-<p class="text-muted">Espaço onde partilhamos alguns dos momentos vividos no nosso Centro</p>
-</div>
-<!-- Carrossel -->
-<div class="carousel slide" data-bs-ride="carousel" id="carouselMural">
-<div class="carousel-inner">
-<!-- Slide 1 -->
-<div class="carousel-item active">
-<img alt="Santos Populares no Centro" class="d-block w-100 img-fluid" src="assets/img/s-joao-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption">
-<h5 class="titulo-slide">São João 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 2 -->
-<div class="carousel-item">
-<img alt="Visita a Santiago de Compostela 2025" class="d-block w-100 img-fluid" src="assets/img/santiago-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Visita a Santiago de Compostela 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 3 -->
-<div class="carousel-item">
-<img alt="Passeio de Barco 2025" class="d-block w-100 img-fluid" src="assets/img/barco.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Passeio de Barco 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 4 -->
-<div class="carousel-item">
-<img alt="Dia do Pai 2025" class="d-block w-100 img-fluid" src="assets/img/dia-do-pai-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Dia do Pai 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 5 -->
-<div class="carousel-item">
-<img alt="Cortejo de Carnaval 2025" class="d-block w-100 img-fluid" src="assets/img/cortejo-carnaval-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Cortejo de Carnaval 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 6 -->
-<div class="carousel-item">
-<img alt="Visita à Rádio Ansiães 2025" class="d-block w-100 img-fluid" src="assets/img/radio-ansiaes-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Visita à Rádio Ansiães 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 7 -->
-<div class="carousel-item">
-<img alt="Missão País 2025" class="d-block w-100 img-fluid" src="assets/img/missao-pais-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Missão País 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<!-- Slide 8 -->
-<div class="carousel-item">
-<img alt="Cantar dos Reis 2025" class="d-block w-100 img-fluid" src="assets/img/cantar-reis-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Cantar dos Reis 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-</div>
-<!-- Controlo do Carrossel -->
-<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselMural" type="button">
-<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-<span class="visually-hidden">Anterior</span>
-</button>
-<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselMural" type="button">
-<span aria-hidden="true" class="carousel-control-next-icon"></span>
-<span class="visually-hidden">Seguinte</span>
-</button>
-</div>
-</div>
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="fw-bold">Mural das Atividades</h2>
+      <p class="text-muted">Espaço onde partilhamos alguns dos momentos vividos no nosso Centro</p>
+    </div>
+    <!-- Carrossel -->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselMural">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img alt="Santos Populares no Centro" class="d-block w-100 img-fluid" src="assets/img/s-joao-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption">
+            <h5 class="titulo-slide">São João 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img alt="Visita a Santiago de Compostela 2025" class="d-block w-100 img-fluid" src="assets/img/santiago-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Visita a Santiago de Compostela 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img alt="Passeio de Barco 2025" class="d-block w-100 img-fluid" src="assets/img/barco.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Passeio de Barco 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="carousel-item">
+          <img alt="Dia do Pai 2025" class="d-block w-100 img-fluid" src="assets/img/dia-do-pai-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Dia do Pai 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="carousel-item">
+          <img alt="Cortejo de Carnaval 2025" class="d-block w-100 img-fluid" src="assets/img/cortejo-carnaval-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Cortejo de Carnaval 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="carousel-item">
+          <img alt="Visita à Rádio Ansiães 2025" class="d-block w-100 img-fluid" src="assets/img/radio-ansiaes-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Visita à Rádio Ansiães 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 7 -->
+        <div class="carousel-item">
+          <img alt="Missão País 2025" class="d-block w-100 img-fluid" src="assets/img/missao-pais-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Missão País 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+        <!-- Slide 8 -->
+        <div class="carousel-item">
+          <img alt="Cantar dos Reis 2025" class="d-block w-100 img-fluid" src="assets/img/cantar-reis-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
+          <div class="carousel-caption text-center custom-caption">
+            <h5 class="titulo-slide">Cantar dos Reis 2025</h5>
+            <div class="barra-azul"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Controlo do Carrossel -->
+      <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselMural" type="button">
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselMural" type="button">
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Seguinte</span>
+      </button>
+    </div>
+  </div>
 </section>
+
 <!-- Faq Section -->
 <section class="faq-9 faq section light-background" id="faq">
 <div class="container">
@@ -847,7 +884,7 @@
 <h5 class="mb-1">A nossa localização</h5>
 <p class="mb-0">Rua Padre Fernando Ribeiro nº22<br/>5140-142 Fontelonga<br/>Carrazeda de Ansiães</p>
 </div>
-</div>
+</div> 
 </div>
 <div class="col-md-4 mb-4">
 <div class="d-flex align-items-start justify-content-center justify-content-md-start">
@@ -864,7 +901,7 @@
 <div>
 <h5 class="mb-1">Endereço de Email</h5>
 <p class="mb-0">cspfontelongaa@sapo.com</p>
-</div>
+</div>  
 </div>
 </div>
 </div>
@@ -872,52 +909,77 @@
 </div>
 </section>
 <section id="mapa" style="width: 100vw; height: 500px; margin: 0; padding: 0;">
-<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.612459977471!2d-7.263858500000034!3d41.23021510000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3b71a31be9f47d%3A0x8df1be2b134916b1!2sCentro%20Social%20e%20Paroquial%20de%20Fontelonga!5e0!3m2!1spt-PT!2spt!4v1752746562665!5m2!1spt-PT!2spt" style="border:0;" width="100%"></iframe>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.612459977471!2d-7.263858500000034!3d41.23021510000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3b71a31be9f47d%3A0x8df1be2b134916b1!2sCentro%20Social%20e%20Paroquial%20de%20Fontelonga!5e0!3m2!1spt-PT!2spt!4v1752746562665!5m2!1spt-PT!2spt"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
 </section>
+
 </div></div></section><!-- /Contact Section -->
-</div></div></section></div></section></main>
-<!-- Rodapé corrigido -->
-<footer class="footer" id="footer">
-<div class="container">
-<div class="row footer-section text-start justify-content-between">
-<!-- Links Úteis -->
-<div class="col-md-4">
-<h5>Links Úteis</h5>
-<ul class="list-unstyled">
-<li><a href="#">Início</a></li>
-<li><a href="#sobre">Sobre nós</a></li>
-<li><a href="#contact">Contactos</a></li>
-</ul>
-</div>
-<!-- Nossa Missão -->
-<div class="col-md-8">
-<h5>A Nossa Missão</h5>
-<p style="text-align: justify;">
+</div></section></main>
+ <!-- Rodapé corrigido -->
+  <footer id="footer" class="footer">
+    <div class="container">
+      <div class="row footer-section text-start justify-content-between">
+
+        <!-- Links Úteis -->
+        <div class="col-md-4">
+          <h5>Links Úteis</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Início</a></li>
+            <li><a href="#sobre">Sobre nós</a></li>
+            <li><a href="#contact">Contactos</a></li>
+          </ul>
+        </div>
+
+        <!-- Nossa Missão -->
+        <div class="col-md-8">
+          <h5>A Nossa Missão</h5>
+          <p style="text-align: justify;">
             O Centro Social Paroquial de Fontelonga promove o bem-estar, a solidariedade e o acompanhamento das famílias e dos mais frágeis. É com alegria e espírito de serviço que caminhamos juntos.
           </p>
-</div>
-</div>
-<hr class="my-3"/>
-<div class="text-center small">
-        © Copyright <strong>Centro Social Paroquial de Fontelonga</strong> – Todos os direitos reservados<br/>
-</div>
-</div>
-</footer>
+        </div>
+
+      </div>
+      <hr class="my-3">
+
+      <div class="text-center small">
+        © Copyright <strong>Centro Social Paroquial de Fontelonga</strong> – Todos os direitos reservados<br>
+      </div>
+    </div>
+  </footer>
+
 <!-- Scroll Top -->
 <a class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
 <i class="bi bi-arrow-up-short"></i>
 </a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<!-- Main JS File -->
+<script src="assets/js/main.js"></script>
+<!-- Bootstrap CDN (opcional se já estiver incluído acima) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelector('a[href="#features"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
+<script>
+document.querySelector('a[href="#mural"]').addEventListener('click', function(e) {
+  e.preventDefault();
+  document.getElementById('mural').scrollIntoView({ behavior: 'smooth' });
+});
+</script>
 </body>
 </html>
