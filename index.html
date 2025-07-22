@@ -952,15 +952,14 @@
 <!-- Bootstrap CDN (opcional se já estiver incluído acima) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-document.querySelector('a[href="#features"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  document.getElementById('features').scrollIntoView({ behavior: 'smooth' });
-});
-</script>
-<script>
-document.querySelector('a[href="#mural"]').addEventListener('click', function(e) {
-  e.preventDefault();
-  document.getElementById('mural').scrollIntoView({ behavior: 'smooth' });
-});
-</script>
+  function aceitarCookies() {
+    document.getElementById('cookie-banner').style.display = 'none';
+    document.cookie = "cookies_aceites=true; path=/; max-age=31536000";
+  }
+  window.onload = function() {
+    if (document.cookie.indexOf("cookies_aceites=true") === -1) {
+      document.getElementById('cookie-banner').style.display = 'block';
+    }
+  }
+ </script> 
 </html>
