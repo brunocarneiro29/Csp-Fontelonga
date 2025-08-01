@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 
 <html lang="en">
 <style>
@@ -173,27 +173,40 @@
         display: block;
     }
     </style><style>
-    /* Menu Mobile azul claro */
+    /* Menu mobile full-screen */
     .mobile-nav {
-        background: #0d6efd !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0d6efd;
         color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        font-size: 24px;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
         z-index: 2000;
+    }
+    .mobile-nav.active {
+        transform: translateY(0);
     }
     .mobile-nav a {
         color: white !important;
+        text-decoration: none;
+        font-size: 24px;
     }
     .mobile-nav-close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        font-size: 36px;
         color: white !important;
-    }
-
-    /* Esconder header ao abrir menu */
-    .hidden-header {
-        display: none !important;
-    }
-
-    /* Overlay azul claro */
-    .mobile-nav-overlay {
-        background: rgba(13, 110, 253, 0.8) !important;
+        cursor: pointer;
     }
     </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
