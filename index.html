@@ -133,32 +133,30 @@
         }
     }
     </style><style>
-    /* Header fixo e visível em todas as páginas */
-    header {
-        background: white !important;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 1100;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    body {
-        padding-top: 90px; /* espaço para o header fixo */
-    }
-    /* Garantir que o botão do menu mobile é sempre visível */
-    .mobile-nav-toggle {
-        color: #1d3557 !important; /* Azul escuro */
-        font-size: 2rem;
-        cursor: pointer;
-        margin-left: 10px;
-        z-index: 2100;
+    /* Logo escondido em mobile */
+    @media (max-width: 1199px) {
+        .header-container img {
+            display: none !important;
+        }
+        .mobile-nav-toggle {
+            font-size: 2rem;
+            color: #1d3557;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        .header-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 10px;
+            gap: 8px;
+        }
     }
     </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
-<img alt="Logo Centro Social Paroquial de Fontelonga" src="assets/img/cspf.png" style="height: 40px; width: auto; display: block;"/>
+<span class="d-none d-xl-inline"><img alt="Logo Centro Social Paroquial de Fontelonga" src="assets/img/cspf.png" style="height: 40px; width: auto; display: block;"/></span>
 <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
 </a>
 <nav class="navmenu" id="navmenu">
@@ -1113,3 +1111,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
+
