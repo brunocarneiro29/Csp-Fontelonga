@@ -59,7 +59,60 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-<style>html { scroll-behavior: smooth; }</style></head>
+<style>html { scroll-behavior: smooth; }</style><style>
+    /* Menu Mobile */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100%;
+        background: #1d3557;
+        color: white;
+        transition: 0.3s ease;
+        z-index: 2000;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mobile-nav.active {
+        right: 0;
+    }
+    .mobile-nav a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .mobile-nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1500;
+    }
+    .mobile-nav-overlay.active {
+        display: block;
+    }
+    .mobile-nav-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+    }
+    @media (min-width: 1200px) {
+        .mobile-nav, .mobile-nav-overlay {
+            display: none !important;
+        }
+    }
+    </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
@@ -952,7 +1005,56 @@
     }
   }
  </script>
-</html>
+<div class="mobile-nav" id="mobileNav"><div class="mobile-nav-close">×</div><a href="#hero">Home</a><a href="#sobre">Sobre nós</a><a href="#servicos">Serviços</a><a href="#contas">Contas de Gerência</a><a href="#mural">Mural das Atividades</a><a href="#contact">Contactos</a><a href="donativos.html#about">Donativos</a></div><div class="mobile-nav-overlay" id="mobileNavOverlay"></div><script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const mobileNav = document.getElementById("mobileNav");
+      const overlay = document.getElementById("mobileNavOverlay");
+      const openBtn = document.querySelector(".mobile-nav-toggle");
+      const closeBtn = document.querySelector(".mobile-nav-close");
+    
+      function openMenu() {
+        mobileNav.classList.add("active");
+        overlay.classList.add("active");
+      }
+    
+      function closeMenu() {
+        mobileNav.classList.remove("active");
+        overlay.classList.remove("active");
+      }
+    
+      openBtn.addEventListener("click", openMenu);
+      closeBtn.addEventListener("click", closeMenu);
+      overlay.addEventListener("click", closeMenu);
+    
+      document.querySelectorAll(".mobile-nav a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+      });
+    });
+    </script><script>
+document.addEventListener("DOMContentLoaded", function() {
+  const mapping = {
+    "Estrutura Residencial Para Idosos": "#features-tab-1",
+    "Centro de Dia": "#features-tab-2",
+    "Apoio Domiciliário": "#features-tab-3"
+  };
+
+  document.querySelectorAll(".stat-item h4").forEach(h4 => {
+    h4.closest("a")?.addEventListener("click", function(e) {
+      e.preventDefault();
+      const title = h4.textContent.trim();
+      const targetTab = mapping[title];
+      const tabTrigger = document.querySelector(`a[data-bs-target='${targetTab}']`);
+      if (tabTrigger) {
+        // Ativa a tab correta
+        const tab = new bootstrap.Tab(tabTrigger);
+        tab.show();
+      }
+      // Scroll suave até secção serviços
+      document.querySelector("#servicos").scrollIntoView({behavior: "smooth"});
+    });
+  });
+});
+</script></html>
 <!-- Cookie Banner -->
 <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #222; color: white; padding: 15px; text-align: center; z-index: 9999;">
   Este site utiliza cookies para garantir que tem a melhor experiência. <a href="#" style="color: #0d6efd;">Saiba mais</a>.
