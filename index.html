@@ -177,6 +177,7 @@
     .mobile-nav {
         background: #0d6efd !important;
         color: white;
+        z-index: 2000;
     }
     .mobile-nav a {
         color: white !important;
@@ -184,9 +185,15 @@
     .mobile-nav-close {
         color: white !important;
     }
-    /* Esconder header quando menu abre */
+
+    /* Esconder header ao abrir menu */
     .hidden-header {
         display: none !important;
+    }
+
+    /* Overlay azul claro */
+    .mobile-nav-overlay {
+        background: rgba(13, 110, 253, 0.8) !important;
     }
     </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
@@ -1146,4 +1153,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
+
 
