@@ -112,6 +112,26 @@
             display: none !important;
         }
     }
+    </style><style>
+    /* Botão mobile visível e destacado */
+    .mobile-nav-toggle {
+        font-size: 2rem;
+        cursor: pointer;
+        color: #1d3557; /* azul escuro */
+        margin-left: 10px;
+        z-index: 2100;
+    }
+    @media (max-width: 1199px) {
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+        .mobile-nav-toggle {
+            display: block !important;
+        }
+    }
     </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
