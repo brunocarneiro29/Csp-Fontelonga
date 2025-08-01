@@ -173,6 +173,13 @@
         display: block;
     }
     </style><style>
+    /* Header só aparece em desktop */
+    @media (max-width: 1199px) {
+        .desktop-header {
+            display: none !important;
+        }
+    }
+
     /* Menu mobile full-screen */
     .mobile-nav {
         position: fixed;
@@ -189,8 +196,8 @@
         gap: 30px;
         font-size: 24px;
         transform: translateY(-100%);
-        transition: transform 0.3s ease-in-out;
-        z-index: 2000;
+        transition: transform 0.4s ease-in-out;
+        z-index: 3000;
     }
     .mobile-nav.active {
         transform: translateY(0);
@@ -208,8 +215,13 @@
         color: white !important;
         cursor: pointer;
     }
+
+    /* Evitar flash branco */
+    body.menu-open {
+        background-color: #0d6efd !important;
+    }
     </style></head>
-<header class="header d-flex align-items-center fixed-top" id="header">
+<header class="header d-flex align-items-center fixed-top desktop-header" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
 <span class="d-none d-xl-inline"><span class="d-none d-xl-inline"><img alt="Logo Centro Social Paroquial de Fontelonga" src="assets/img/cspf.png" style="height: 40px; width: auto; display: block;"/></span></span>
