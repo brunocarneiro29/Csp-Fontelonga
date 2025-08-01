@@ -152,11 +152,33 @@
             gap: 8px;
         }
     }
+    </style><style>
+    /* Mobile header layout */
+    @media (max-width: 1199px) {
+        .header-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            padding: 0 15px;
+        }
+        .header-container img {
+            display: none !important;
+        }
+        .mobile-nav-toggle {
+            font-size: 2rem;
+            color: #1d3557;
+            cursor: pointer;
+        }
+        .header-container a.btn {
+            margin-left: auto;
+        }
+    }
     </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
-<span class="d-none d-xl-inline"><img alt="Logo Centro Social Paroquial de Fontelonga" src="assets/img/cspf.png" style="height: 40px; width: auto; display: block;"/></span>
+<span class="d-none d-xl-inline"><span class="d-none d-xl-inline"><img alt="Logo Centro Social Paroquial de Fontelonga" src="assets/img/cspf.png" style="height: 40px; width: auto; display: block;"/></span></span>
 <h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
 </a>
 <nav class="navmenu" id="navmenu">
@@ -169,9 +191,9 @@
 <li><a href="#mural">Mural das Atividades</a></li>
 <li><a href="#contact">Contactos</a></li>
 </ul>
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+
 </ul></nav>
-<a class="btn-getstarted" href="donativos.html#about">Donativos</a>
+<a class="btn-getstarted" href="donativos.html#about">Donativos</a><i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </div>
 </header>
 <main class="main">
