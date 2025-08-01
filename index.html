@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 
 <html lang="en">
 <style>
@@ -173,13 +173,17 @@
         display: block;
     }
     </style><style>
-    /* Header só aparece em desktop */
-    @media (max-width: 1199px) {
-        .desktop-header {
-            display: none !important;
-        }
+    /* Header com fundo azul claro em mobile */
+    header.desktop-header {
+        background-color: #0d6efd !important;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-
+    header.desktop-header img {
+        max-height: 40px;
+    }
     /* Menu mobile full-screen */
     .mobile-nav {
         position: fixed;
@@ -215,8 +219,6 @@
         color: white !important;
         cursor: pointer;
     }
-
-    /* Evitar flash branco */
     body.menu-open {
         background-color: #0d6efd !important;
     }
@@ -1178,4 +1180,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
-
