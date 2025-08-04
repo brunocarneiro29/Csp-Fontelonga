@@ -1161,15 +1161,17 @@ document.addEventListener("DOMContentLoaded", function() {
         if (openBtn) openBtn.style.display = "block";
       }, 200);
 
-      // Garante scroll suave mesmo após fechar o menu
       const href = this.getAttribute('href');
+      
+      // Scroll suave apenas para âncoras internas
       if (href && href.startsWith('#')) {
         e.preventDefault();
         const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({ behavior: 'smooth' });
         }
-      }
+      } 
+      // Links normais abrem normalmente
     });
   });
 });
@@ -1214,4 +1216,5 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
+
 
