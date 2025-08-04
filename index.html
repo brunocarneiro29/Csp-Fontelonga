@@ -1,33 +1,425 @@
 <!DOCTYPE html>
 
 <html lang="en">
+<style>
+<style>
+  .carousel-caption {
+    background: none !important;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+  }
 
+  .titulo-slide {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+
+  .barra-azul {
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    border-radius: 2px;
+    margin: 0 auto; /* 🟦 Esta linha centraliza horizontalmente */
+  }
+</style>
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Centro Social Paroquial de Fontelonga</title>
+<meta content="" name="description"/>
+<meta content="" name="keywords"/>
+
+<link href="assets/img/cspf.png" rel="icon"/>
+<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
+<link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
+<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
+<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+
+<link href="assets/css/main.css" rel="stylesheet"/>
+
+<style>html { scroll-behavior: smooth; }</style><style>
+    /* Menu Mobile */
+
+    </style><style>
+.mobile-nav-toggle {
+  display: none; /* Escondido por padrão (desktop) */
+}
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    z-index: 5000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    color: white !important;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  .mobile-nav-toggle.bi-list::before {
+    color: white !important;
+  }
+}
+</style><style>
+    /* Logo escondido em mobile */
+    @media (max-width: 1199px) {
+        .header-container img {
+            display: none !important;
+        }
+        .mobile-nav-toggle {
+            font-size: 2rem;
+            color: #1d3557;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+        .header-container {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 10px;
+            gap: 8px;
+        }
+    }
+    </style><style>
+    /* Mobile header layout */
+    @media (max-width: 1199px) {
+        .header-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            padding: 0 15px;
+        }
+        .header-container img {
+            display: none !important;
+        }
+        .mobile-nav-toggle {
+            font-size: 2rem;
+            color: #1d3557;
+            cursor: pointer;
+        }
+        .header-container a.btn {
+            margin-left: auto;
+        }
+    }
+    </style><style>
+    /* Menu Mobile com fundo azul */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100%;
+        background: #1d3557 !important;
+        color: white;
+        transition: 0.3s ease;
+        z-index: 2000;
+        padding: 60px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .mobile-nav.active {
+        right: 0;
+    }
+    .mobile-nav a {
+        color: white !important;
+        font-size: 18px;
+        text-decoration: none;
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .mobile-nav-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 28px;
+        color: white !important;
+        cursor: pointer;
+    }
+    .mobile-nav-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+        z-index: 1500;
+    }
+    .mobile-nav-overlay.active {
+        display: block;
+    }
+    </style><style>
+    html {
+        scroll-behavior: smooth;
+    }
+    </style><style>
+    @media (max-width: 991px) {
+        header nav, header .navbar, header .nav-menu, .mobile-nav-toggle {
+            display: none !important;
+        }
+    }
+    </style><style>
+/* Ajustes do carrossel para mobile */
+@media (max-width: 768px) {
+  .carousel-caption {
+    position: absolute;
+    bottom: 10px; /* move para baixo */
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(0, 0, 0, 0.4); /* fundo semitransparente */
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .titulo-slide {
+    font-size: 1rem; /* reduz tamanho no mobile */
+  }
+
+  .barra-azul {
+    width: 40px; /* barra mais pequena */
+  }
+}
+</style><style>
+/* Ajustes do header para mobile */
+@media (max-width: 1199px) {
+  .header-container {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+  }
+
+  .header-container img {
+    display: block !important;
+    height: 30px;
+    width: auto;
+  }
+
+  .sitename {
+    display: block !important;
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+
+  .logo {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .mobile-nav-toggle {
+    display: block !important;
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+
+  .btn-getstarted {
+    order: 2;
+    margin-left: auto;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+</style>
+<style>
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 15px;
+    right: 15px;
+    z-index: 3000 !important;
+    display: block !important;
+  }
+}
+</style><style>
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 15px;
+    right: 15px;
+    z-index: 3000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    }
+  .mobile-nav-toggle.bi-list::before {
+    color: white !important;
+  }
+}
+</style><style>
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    z-index: 3000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    color: white !important;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: background 0.3s ease;
+  }
+  .mobile-nav-toggle:hover {
+    background: rgba(0,0,0,0.7);
+  }
+  .mobile-nav-toggle.bi-list::before {
+    color: white !important;
+  }
+}
+</style>
+<style>
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 20px;
+    right: 20px;
+    z-index: 5000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(0,0,0,0.6);
+    color: white !important;
+    border-radius: 50%;
+    font-size: 1.5rem;
+  }
+  .mobile-nav-toggle.bi-list::before {
+    color: white !important;
+  }
+}
+</style>
+
+<style>
+/* Botão hamburguer mobile */
+.mobile-nav-toggle {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5000;
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Menu lateral moderno */
+.mobile-nav-modern {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.3s ease;
+  z-index: 6000;
+}
+.mobile-nav-modern.active {
+  right: 0;
+}
+.mobile-nav-modern a {
+  color: #1d3557;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.mobile-nav-modern .mobile-nav-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Overlay */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 5500;
+}
+.mobile-nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
 </head>
+<header class="header d-flex align-items-center fixed-top" id="header">
+<div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+<a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
+<span class="d-none d-xl-inline"><span class="d-none d-xl-inline"><img alt="Logo Centro Social Paroquial de Fontelonga" src="assets/img/cspf.png" style="height: 40px; width: auto; display: block;"/></span></span>
+<h1 class="sitename m-0" style="font-size: 1.25rem; line-height: 1.2;">Centro Social Paroquial de Fontelonga</h1>
+</a>
+<nav class="navmenu" id="navmenu">
+<ul>
+<li><li><a class="active" href="#hero">Home</a></li></li>
+<li><a href="#sobre">Sobre nós</a></li>
+<a class="nav-link scrollto" href="#servicos">Serviços</a>
+<li><a href="#contas">Contas de Gerência</a></li>
+<li><a href="#mural">Mural das Atividades</a></li>
+<li><a href="#contact">Contactos</a></li>
+</ul></nav>
+<i class="mobile-nav-toggle bi bi-list"></i>
+</div>
 
-<header id="header" class="header fixed-top d-flex align-items-center">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+<div id="mobileNav" class="mobile-nav">
+  <span class="mobile-nav-close">&times;</span>
+  <a href="#hero">Home</a>
+  <a href="#sobre">Sobre nós</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contas">Contas de Gerência</a>
+  <a href="#mural">Mural das Atividades</a>
+  <a href="#contact">Contactos</a>
+</div>
+<div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
 
-    <a href="index.html" class="logo d-flex align-items-center">
-      <img src="assets/img/logo.png" alt="Logo Pequeno" style="height:40px;">
-    </a>
-
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><a href="#hero">Início</a></li>
-        <li><a href="#about">Sobre Nós</a></li>
-        <li><a href="#services">Serviços</a></li>
-        <li><a href="#portfolio">Mural</a></li>
-        <li><a href="#team">Testemunhos</a></li>
-        <li><a href="#pricing">Contas</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#contact">Contactos</a></li>
-        <li><a href="donativos.html" class="btn btn-primary" style="margin-left:10px;border-radius:20px;">Donativos</a></li>
-      </ul>
-    </nav>
-
-  </div>
 </header>
-
 <main class="main">
 
 <section class="hero section" id="hero">
