@@ -259,6 +259,27 @@
     display: block !important;
   }
 }
+</style><style>
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 15px;
+    right: 15px;
+    z-index: 3000 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(0,0,0,0.4);
+    color: white !important;
+    border-radius: 50%;
+    font-size: 1.8rem;
+  }
+  .mobile-nav-toggle.bi-list::before {
+    color: white !important;
+  }
+}
 </style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -1235,6 +1256,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
+
+
 
 
 
