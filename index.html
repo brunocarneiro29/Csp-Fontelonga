@@ -249,7 +249,17 @@
   }
 }
 </style>
-</head>
+<style>
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed !important;
+    top: 15px;
+    right: 15px;
+    z-index: 3000 !important;
+    display: block !important;
+  }
+}
+</style></head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
@@ -265,7 +275,7 @@
 <li><a href="#mural">Mural das Atividades</a></li>
 <li><a href="#contact">Contactos</a></li>
 </ul></nav>
-<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+<i class="mobile-nav-toggle bi bi-list"></i>
 </div>
 
 <div id="mobileNav" class="mobile-nav">
@@ -1225,7 +1235,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
-
 
 
 
