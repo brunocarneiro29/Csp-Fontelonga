@@ -322,6 +322,73 @@
   }
 }
 </style>
+
+<style>
+/* Botão hamburguer mobile */
+.mobile-nav-toggle {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .mobile-nav-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 5000;
+    display: block;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Menu lateral moderno */
+.mobile-nav-modern {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100%;
+  background: white;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: right 0.3s ease;
+  z-index: 6000;
+}
+.mobile-nav-modern.active {
+  right: 0;
+}
+.mobile-nav-modern a {
+  color: #1d3557;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+.mobile-nav-modern .mobile-nav-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Overlay */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 5500;
+}
+.mobile-nav-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+</style>
 </head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
@@ -1254,6 +1321,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
+
 
 
 
