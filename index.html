@@ -205,8 +205,7 @@
     width: 40px; /* barra mais pequena */
   }
 }
-</style>
-<style>
+</style><style>
 /* Ajustes do header para mobile */
 @media (max-width: 1199px) {
   .header-container {
@@ -259,17 +258,27 @@
 </a>
 <nav class="navmenu" id="navmenu">
 <ul>
-<ul>
-<li><a class="active" href="#hero">Home</a></li>
+<li><li><a class="active" href="#hero">Home</a></li></li>
 <li><a href="#sobre">Sobre nós</a></li>
 <a class="nav-link scrollto" href="#servicos">Serviços</a>
 <li><a href="#contas">Contas de Gerência</a></li>
 <li><a href="#mural">Mural das Atividades</a></li>
 <li><a href="#contact">Contactos</a></li>
-</ul>
 </ul></nav>
 <a class="btn-getstarted" href="donativos.html#about">Donativos</a><i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 </div>
+
+<div id="mobileNav" class="mobile-nav">
+  <span class="mobile-nav-close">&times;</span>
+  <a href="#hero">Home</a>
+  <a href="#sobre">Sobre nós</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#contas">Contas de Gerência</a>
+  <a href="#mural">Mural das Atividades</a>
+  <a href="#contact">Contactos</a>
+</div>
+<div id="mobileNavOverlay" class="mobile-nav-overlay"></div>
+
 </header>
 <main class="main">
 <!-- Hero Section -->
@@ -492,7 +501,7 @@
 <div class="col-lg-8 mx-auto text-center">
 <h2 class="display-4 mb-4">Ajuda-nos a Ajudar!</h2>
 <p class="mb-4">Trabalhamos por amor e alegria. Ajude a nossa missão.</p>
-<a class="btn btn-cta" href="donativos.html">Donativos</a>
+<li><a class="btn btn-cta" href="donativos.html">Donativos</a></li>
 </div>
 </div>
 </div></section><!-- /Clients Section -->
@@ -536,7 +545,7 @@
 <div class="d-flex align-items-center mb-3">
 <img alt="Maria Fernandes" class="rounded-circle me-3" height="70" src="assets/img/cremilde.jpg" style="object-fit: cover;" width="70"/>
 <div>
-<h5 class="mb-0">Cremilde Morais<h5></h5>
+<h5 class="mb-0">Cremilde Morais</h5>
 <small>Utente</small>
 </h5></div>
 </div>
@@ -1216,5 +1225,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 </script>
+
+
 
 
