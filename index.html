@@ -182,7 +182,31 @@
             display: none !important;
         }
     }
-    </style></head>
+    </style><style>
+/* Ajustes do carrossel para mobile */
+@media (max-width: 768px) {
+  .carousel-caption {
+    position: absolute;
+    bottom: 10px; /* move para baixo */
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: rgba(0, 0, 0, 0.4); /* fundo semitransparente */
+    padding: 5px 10px;
+    border-radius: 8px;
+  }
+
+  .titulo-slide {
+    font-size: 1rem; /* reduz tamanho no mobile */
+  }
+
+  .barra-azul {
+    width: 40px; /* barra mais pequena */
+  }
+}
+</style>
+</head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 <a class="logo d-flex align-items-center me-auto me-xl-0" href="index.html" style="gap: 10px;">
