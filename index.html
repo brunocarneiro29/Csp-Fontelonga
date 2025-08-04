@@ -920,7 +920,7 @@
 <p class="text-muted">Espaço onde partilhamos alguns dos momentos vividos no nosso Centro</p>
 </div>
 <!-- Carrossel -->
-<div id="carouselMural" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+<div id="carouselMural" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
 <div class="carousel-inner">
 <!-- Slide 1 -->
 <div class="carousel-item active">
@@ -1157,6 +1157,8 @@
       function closeMenu() {
         mobileNav.classList.remove("active");
         overlay.classList.remove("active");
+        // Garante que o botão hamburguer volta a aparecer
+        openBtn.style.display = "block";
       }
     
       openBtn.addEventListener("click", openMenu);
