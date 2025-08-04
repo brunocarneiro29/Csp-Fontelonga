@@ -206,6 +206,50 @@
   }
 }
 </style>
+<style>
+/* Ajustes do header para mobile */
+@media (max-width: 1199px) {
+  .header-container {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 10px;
+  }
+
+  .header-container img {
+    display: block !important;
+    height: 30px;
+    width: auto;
+  }
+
+  .sitename {
+    display: block !important;
+    font-size: 0.9rem;
+    line-height: 1.1;
+  }
+
+  .logo {
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .mobile-nav-toggle {
+    display: block !important;
+    font-size: 1.8rem;
+    margin-left: 10px;
+  }
+
+  .btn-getstarted {
+    order: 2;
+    margin-left: auto;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+</style>
 </head>
 <header class="header d-flex align-items-center fixed-top" id="header">
 <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
