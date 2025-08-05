@@ -396,7 +396,17 @@
   visibility: visible;
 }
   </style>
- </head>
+ 
+  <style>
+    /* Esconde elemento extra após o header apenas em mobile */
+    @media (max-width: 768px) {
+      header.header + * {
+        display: none !important;
+      }
+    }
+  </style>
+
+</head>
  <header class="header fixed-top d-flex align-items-center" id="header">
   <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
    <a class="logo d-flex align-items-center" href="index.html">
