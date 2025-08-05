@@ -1385,6 +1385,24 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById('cookie-banner').style.display = 'none';
     }
   }
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Inicializa todos os colapsos do Bootstrap
+    document.querySelectorAll('.accordion-button').forEach(btn => {
+      btn.addEventListener('click', function() {
+        const target = document.querySelector(this.getAttribute('data-bs-target') || '#' + this.getAttribute('aria-controls'));
+        if (!target) return;
+        // Toggle manualmente
+        if (target.classList.contains('show')) {
+          new bootstrap.Collapse(target, { toggle: true }).hide();
+        } else {
+          new bootstrap.Collapse(target, { toggle: true }).show();
+        }
+      });
+    });
+  });
+</script>
+
 </script>
 
 
