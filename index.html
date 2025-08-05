@@ -398,71 +398,38 @@
   </style>
  
   <style>
-    /* Esconde elemento extra após o header apenas em mobile */
-    @media (max-width: 768px) {
-      header.header + * {
-        display: none !important;
-      }
-    }
+    header.header { padding: 8px 0 !important; }
+    .header-container { padding: 8px 20px !important; border-radius: 40px !important; }
+    .logo img { height: 32px !important; }
+    .sitename { font-size: 1rem !important; margin-left: 6px !important; }
+    .navmenu ul { gap: 24px !important; font-size: 0.95rem !important; }
+    .btn-getstarted { padding: 6px 14px !important; border-radius: 20px !important; font-size: 0.9rem !important; }
   </style>
 
 </head>
- <header class="header fixed-top d-flex align-items-center" id="header">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-   <a class="logo d-flex align-items-center" href="index.html">
-    <img alt="Logo Pequeno" src="assets/img/logo.png" style="height: 40px;"/>
-   </a>
-   <nav class="navbar" id="navbar">
-    <ul class="d-flex align-items-center m-0 p-0 list-unstyled">
-     <li>
-      <a class="nav-link px-2" href="#hero">
-       Início
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#about">
-       Sobre Nós
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#services">
-       Serviços
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#portfolio">
-       Mural
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#team">
-       Testemunhos
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#pricing">
-       Contas
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#faq">
-       FAQ
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#contact">
-       Contactos
-      </a>
-     </li>
-     <li>
-      <a class="btn btn-primary ms-3" href="donativos.html" style="border-radius:20px;">
-       Donativos
-      </a>
-     </li>
-    </ul>
-   </nav>
+ 
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <div class="header-container container-fluid container-xl d-flex align-items-center justify-content-between">
+    <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <img src="assets/img/logo.png" alt="Centro Social Paroquial de Fontelonga">
+      <h1 class="sitename ms-2 mb-0">Centro Social Paroquial de Fontelonga</h1>
+    </a>
+    
+<nav id="navbar" class="navmenu d-flex">
+  <ul class="list-unstyled d-flex gap-4 mb-0">
+    <li><a href="#hero" class="nav-link scrollto active">Home</a></li>
+    <li><a href="#sobre" class="nav-link scrollto">Sobre nós</a></li>
+    <li><a href="#servicos" class="nav-link scrollto">Serviços</a></li>
+    <li><a href="#contas" class="nav-link scrollto">Contas de Gerência</a></li>
+    <li><a href="#mural" class="nav-link scrollto">Mural das Atividades</a></li>
+    <li><a href="#contactos" class="nav-link scrollto">Contactos</a></li>
+  </ul>
+</nav>
+
+    <a href="#donativos" class="btn-getstarted scrollto">Donativos</a>
   </div>
- </header>
+</header>
+
  <main class="main">
   <section class="hero section" id="hero">
    <div class="container" data-aos="fade-up" data-aos-delay="100">
