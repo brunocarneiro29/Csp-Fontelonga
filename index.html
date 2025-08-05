@@ -429,10 +429,66 @@
     }
   </style>
 
+
+  <style>
+    /* Estilização do cabeçalho semelhante ao iLanding */
+    header.header {
+      padding: 8px 0 !important;
+    }
+    .header-container {
+      max-width: 1140px !important;
+      margin: 0 auto !important;
+      padding: 8px 16px !important;
+      border-radius: 40px !important;
+      background: #fff !important;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1) !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-between !important;
+    }
+    .logo img {
+      height: 32px !important;
+    }
+    .sitename {
+      font-size: 0.95rem !important;
+      margin-left: 6px !important;
+      white-space: nowrap;
+    }
+    .navmenu ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      margin: 0;
+      padding: 0;
+      font-size: 0.95rem;
+    }
+    .navmenu a {
+      color: #1f2937;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .navmenu a.active,
+    .navmenu a:hover {
+      color: #3b82f6;
+    }
+    .btn-getstarted {
+      padding: 6px 14px !important;
+      border-radius: 20px !important;
+      font-size: 0.9rem !important;
+      background: #3b82f6 !important;
+      color: #fff !important;
+      text-decoration: none !important;
+      box-shadow: 0 4px 12px rgba(59,130,246,0.3) !important;
+    }
+    .btn-getstarted:hover {
+      background: #2563eb !important;
+    }
+  </style>
+
 </head>
  
 <header id="header" class="header d-flex align-items-center fixed-top">
-  <div class="header-container mx-auto d-flex align-items-center justify-content-between">
+  <div class="header-container container-xl mx-auto d-flex align-items-center justify-content-between">
     <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
       <img src="assets/img/cspf.png" alt="Centro Social Paroquial de Fontelonga">
       <h1 class="sitename ms-2 mb-0">CSP de Fontelonga</h1>
