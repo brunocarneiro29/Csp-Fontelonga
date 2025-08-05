@@ -1,1324 +1,1237 @@
 <!DOCTYPE html>
-
 <html lang="en">
-<style>
-<style>
-  .carousel-caption {
-    background: none !important;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 0;
-    margin: 0;
-  }
 
-  .titulo-slide {
-    font-size: 2rem;
-    font-weight: 700;
-    color: white;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
-    margin-bottom: 10px;
-    text-align: center;
-  }
-
-
-  .barra-azul {
-    width: 60px;
-    height: 4px;
-    background-color: #0d6efd;
-    border-radius: 2px;
-    margin: 0 auto; /* 🟦 Esta linha centraliza horizontalmente */
-  }
-</style>
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Centro Social Paroquial de Fontelonga</title>
-<meta content="" name="description"/>
-<meta content="" name="keywords"/>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - iLanding Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-<link href="assets/img/cspf.png" rel="icon"/>
-<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"/>
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet"/>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
-<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"/>
-<link href="assets/vendor/aos/aos.css" rel="stylesheet"/>
-<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet"/>
-<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<link href="assets/css/main.css" rel="stylesheet"/>
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-<style>html { scroll-behavior: smooth; }</style><style>
-    /* Menu Mobile */
-
-    </style><style>
-.mobile-nav-toggle {
-  display: none; /* Escondido por padrão (desktop) */
-}
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    position: fixed !important;
-    top: 20px;
-    right: 20px;
-    z-index: 5000 !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(0,0,0,0.6);
-    color: white !important;
-    border-radius: 50%;
-    font-size: 1.5rem;
-  }
-  .mobile-nav-toggle.bi-list::before {
-    color: white !important;
-  }
-}
-</style><style>
-    /* Logo escondido em mobile */
-    @media (max-width: 1199px) {
-        .header-container img {
-            display: none !important;
-        }
-        .mobile-nav-toggle {
-            font-size: 2rem;
-            color: #1d3557;
-            cursor: pointer;
-            margin-left: 8px;
-        }
-        .header-container {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 0 10px;
-            gap: 8px;
-        }
-    }
-    </style><style>
-    /* Mobile header layout */
-    @media (max-width: 1199px) {
-        .header-container {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 10px;
-            padding: 0 15px;
-        }
-        .header-container img {
-            display: none !important;
-        }
-        .mobile-nav-toggle {
-            font-size: 2rem;
-            color: #1d3557;
-            cursor: pointer;
-        }
-        .header-container a.btn {
-            margin-left: auto;
-        }
-    }
-    </style><style>
-    /* Menu Mobile com fundo azul */
-    .mobile-nav {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        height: 100%;
-        background: #1d3557 !important;
-        color: white;
-        transition: 0.3s ease;
-        z-index: 2000;
-        padding: 60px 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-    .mobile-nav.active {
-        right: 0;
-    }
-    .mobile-nav a {
-        color: white !important;
-        font-size: 18px;
-        text-decoration: none;
-        padding: 8px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    .mobile-nav-close {
-        position: absolute;
-        top: 15px;
-        right: 20px;
-        font-size: 28px;
-        color: white !important;
-        cursor: pointer;
-    }
-    .mobile-nav-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(0,0,0,0.5);
-        z-index: 1500;
-    }
-    .mobile-nav-overlay.active {
-        display: block;
-    }
-    </style><style>
-    html {
-        scroll-behavior: smooth;
-    }
-    </style><style>
-    @media (max-width: 991px) {
-        header nav, header .navbar, header .nav-menu, .mobile-nav-toggle {
-            display: none !important;
-        }
-    }
-    </style><style>
-/* Ajustes do carrossel para mobile */
-@media (max-width: 768px) {
-  .carousel-caption {
-    position: absolute;
-    bottom: 10px; /* move para baixo */
-    top: auto;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    background: rgba(0, 0, 0, 0.4); /* fundo semitransparente */
-    padding: 5px 10px;
-    border-radius: 8px;
-  }
-
-  .titulo-slide {
-    font-size: 1rem; /* reduz tamanho no mobile */
-  }
-
-  .barra-azul {
-    width: 40px; /* barra mais pequena */
-  }
-}
-</style><style>
-/* Ajustes do header para mobile */
-@media (max-width: 1199px) {
-  .header-container {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    gap: 10px;
-  }
-
-  .header-container img {
-    display: block !important;
-    height: 30px;
-    width: auto;
-  }
-
-  .sitename {
-    display: block !important;
-    font-size: 0.9rem;
-    line-height: 1.1;
-  }
-
-  .logo {
-    display: flex !important;
-    flex-direction: row;
-    align-items: center;
-    gap: 6px;
-  }
-
-  .mobile-nav-toggle {
-    display: block !important;
-    font-size: 1.8rem;
-    margin-left: 10px;
-  }
-
-  .btn-getstarted {
-    order: 2;
-    margin-left: auto;
-    font-size: 0.8rem;
-    padding: 5px 10px;
-  }
-}
-</style>
-<style>
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    position: fixed !important;
-    top: 15px;
-    right: 15px;
-    z-index: 3000 !important;
-    display: block !important;
-  }
-}
-</style><style>
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    position: fixed !important;
-    top: 15px;
-    right: 15px;
-    z-index: 3000 !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    }
-  .mobile-nav-toggle.bi-list::before {
-    color: white !important;
-  }
-}
-</style><style>
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    position: fixed !important;
-    top: 20px;
-    right: 20px;
-    z-index: 3000 !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(0,0,0,0.5);
-    color: white !important;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    transition: background 0.3s ease;
-  }
-  .mobile-nav-toggle:hover {
-    background: rgba(0,0,0,0.7);
-  }
-  .mobile-nav-toggle.bi-list::before {
-    color: white !important;
-  }
-}
-</style>
-<style>
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    position: fixed !important;
-    top: 20px;
-    right: 20px;
-    z-index: 5000 !important;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: rgba(0,0,0,0.6);
-    color: white !important;
-    border-radius: 50%;
-    font-size: 1.5rem;
-  }
-  .mobile-nav-toggle.bi-list::before {
-    color: white !important;
-  }
-}
-</style>
-
-<style>
-/* Botão hamburguer mobile */
-.mobile-nav-toggle {
-  display: none;
-}
-@media (max-width: 1199px) {
-  .mobile-nav-toggle {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 5000;
-    display: block;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-  }
-}
-
-/* Menu lateral moderno */
-.mobile-nav-modern {
-  position: fixed;
-  top: 0;
-  right: -260px;
-  width: 260px;
-  height: 100%;
-  background: white;
-  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
-  padding: 60px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  transition: right 0.3s ease;
-  z-index: 6000;
-}
-.mobile-nav-modern.active {
-  right: 0;
-}
-.mobile-nav-modern a {
-  color: #1d3557;
-  font-size: 1.2rem;
-  text-decoration: none;
-}
-.mobile-nav-modern .mobile-nav-close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-/* Overlay */
-.mobile-nav-overlay {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: rgba(0,0,0,0.4);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.3s;
-  z-index: 5500;
-}
-.mobile-nav-overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-</style>
+  <!-- =======================================================
+  * Template Name: iLanding
+  * Template URL: https://bootstrapmade.com/ilanding-bootstrap-landing-page-template/
+  * Updated: Nov 12 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<header id="header" class="header fixed-top d-flex align-items-center">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+<body class="index-page">
 
-    <a href="index.html" class="logo d-flex align-items-center">
-      <img src="assets/img/logo.png" alt="Logo Pequeno" style="height: 40px;" />
-    </a>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <nav id="navbar" class="navbar">
-      <ul class="d-flex align-items-center m-0 p-0 list-unstyled">
-        <li><a href="#hero" class="nav-link px-2">Início</a></li>
-        <li><a href="#about" class="nav-link px-2">Sobre Nós</a></li>
-        <li><a href="#services" class="nav-link px-2">Serviços</a></li>
-        <li><a href="#portfolio" class="nav-link px-2">Mural</a></li>
-        <li><a href="#team" class="nav-link px-2">Testemunhos</a></li>
-        <li><a href="#pricing" class="nav-link px-2">Contas</a></li>
-        <li><a href="#faq" class="nav-link px-2">FAQ</a></li>
-        <li><a href="#contact" class="nav-link px-2">Contactos</a></li>
-        <li><a href="donativos.html" class="btn btn-primary ms-3" style="border-radius:20px;">Donativos</a></li>
-      </ul>
-    </nav>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">iLanding</h1>
+      </a>
 
-  </div>
-</header>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-<main class="main">
+      <a class="btn-getstarted" href="index.html#about">Get Started</a>
 
-<section class="hero section" id="hero">
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-<div class="row align-items-center">
-<div class="col-lg-6">
-<div class="hero-content" data-aos="fade-up" data-aos-delay="200">
-<div class="company-badge mb-4">
-<i class="bi bi-gear-fill me-2"></i>
-                Trabalhamos por Amor e Alegria
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <i class="bi bi-gear-fill me-2"></i>
+                Working for your success
               </div>
-<h1 class="mb-4">
-                Centro  <br/>
-                Social Paroquial de <br/>
-<span class="accent-text">Fontelonga</span>
-</h1>
-<div class="mb-4 mb-md-5" style="text-align: justify;">
-<p>
-    Somos uma instituição particular de solidariedade social dedicada a prestar cuidados de qualidade a idosos. Promovemos o bem-estar, a dignidade e a alegria de viver.
-  </p>
-<p>
-    No nosso lar cada utente é tratado com respeito, carinho e atenção personalizada. Oferecemos um ambiente familiar, atividades diárias, apoio especializado e um espaço onde sorrisos são parte da rotina.
-  </p>
-<p>
-    Venha conhecer-nos e descubra como fazemos a diferença na vida de quem mais importa.
-  </p>
-</div>
-<div class="hero-buttons">
-</div>
-</div>
-</div>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<div class="col-lg-6">
-<div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
-<img alt="Hero Image" class="img-fluid" src="assets/img/cspf.png"/>
-</div>
-</div>
-</div>
-</div>
-<div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
-<div class="col-lg-3 col-md-6">
-<a href="#features-tab-2"><div class="stat-item">
-<div class="stat-icon">
-<i class="bi bi-people-fill"></i>
-</div>
-<div class="stat-content">
-<h4>Centro de Dia</h4>
-<p class="justify">Acompanhamento diário com atividades e refeições</p>
-</div>
-</div></a>
-</div>
-<div class="col-lg-3 col-md-6">
-<a href="#features-tab-1"><div class="stat-item">
-<div class="stat-icon">
-<i class="bi bi-house-heart-fill"></i>
-</div>
-<div class="stat-content">
-<h4>Estrutura Residencial Para Idosos</h4>
-<p class="mb-0">Apoio permanente com cuidados personalizados</p>
-</div>
-</div></a>
-</div>
-<div class="col-lg-3 col-md-6">
-<a href="#features-tab-3"><div class="stat-item">
-<div class="stat-icon">
-<i class="bi bi-truck"></i>
-</div>
-<div class="stat-content">
-<h4>Apoio Domiciliário</h4>
-<p class="mb-0">Assistência no conforto do lar</p>
-</div>
-</div></a>
-</div>
-<div class="col-lg-3 col-md-6">
-<div class="stat-item">
-<div class="stat-icon">
-<i class="bi bi-calendar-check"></i>
-</div>
-<div class="stat-content">
-<h4>+20 Anos de Serviço</h4>
-<p class="mb-0">Experiência e dedicação à comunidade</p>
-</div>
-</div>
-</div>
 
-<section class="py-5" id="sobre" style="background-color: #f9f9f9;">
-<div class="container">
-<div class="row justify-content-center">
-<div class="col-12 col-xl-10" data-aos="fade-up" data-aos-delay="200">
-<span class="about-meta">Sobre Nós</span>
-<h2 class="about-title" style="color: #1d3557; font-size: 28px; margin-bottom: 20px;">História da Instituição</h2>
-<div style="text-align: justify; font-size: 16px; font-weight: normal; line-height: 1.7;">
-<p>Em 1980, um sonho começou! Começou um projeto inovador no nosso concelho.</p>
-<p>Certo dia, um senhor acordou com o âmbito de fazer desenvolver a aldeia de Fontelonga. Começou por organizar um espaço, onde pudesse juntar todos os jovens da aldeia com o intuito de trocar experiências e aprendizagens diferentes. Tudo isto, para promover uma ocupação aos jovens e juntos caminharem numa missão: a partilha.</p>
-<p>A abertura do Salão Paroquial foi um sucesso, sendo necessário mencionar que todo este projeto iniciou na altura com 10.000 escudos, equivalente nos dias de hoje a 50€. O projeto teve início com a aquisição de uma casa na aldeia, no entanto, o montante não era suficiente. Para dar início à obra, houve necessidade em solicitar a colaboração do povo, reunindo as pessoas da aldeia, que demonstrassem iniciativa em ajudar a crescer este projeto.</p>
-<p>Os tempos eram outros, a interajuda entre o povo era mútua, e logo se obteve a disponibilidade de muitos; reuniram-se em casa de familiares para produzirem trabalhos manuais, que eram vendidos pelas aldeias, ao mesmo tempo que o Sr. Padre Fernando confessava o povo. O povo elaborou diferentes trabalhos, como toalhas de linho, almanaques, pins, peças decorativas, bordados, entre outros.</p>
-<p>O trabalho era diversificado, enquanto alguns vendiam os trabalhos manuais, outros cortavam pinheiros para se usarem como escoras na Instituição. É de salientar que todo este trabalho não era remunerado, era voluntário.</p>
-<p>Com tanto empenho, foi rápido que alcançaram os seus objetivos e, como tal, começaram por comprar material que incentivasse os jovens a frequentar o Salão Paroquial. Como primeira aquisição, adquiriram a 1ª televisão da aldeia, bem como os 1ºs matraquilhos.</p>
-<p>Com as novas instalações do Salão Paroquial, os jovens apareciam cada vez mais. O Sr. Padre Fernando, ao deparar-se com tantos jovens, começou por criar um grupo de bombos, maracas e teatro, para proporcionar o convívio entre os jovens.</p>
-<p>O sucesso era visível, entre o povo humilde e trabalhador da aldeia. Como tal, "foram mais além"... Criaram uma Escola de Formação, compraram a 1ª máquina de tricotar malhas, inexistente no concelho. Formaram duas pessoas nessa área, saindo assim as primeiras malhas para todo o concelho, sendo estas duas pessoas voluntárias. As lãs vinham de um armazém do Porto, para aproveitarem os descontos das mesmas, ajudando desta forma a instituição a crescer, pois as encomendas eram muitas.</p>
-<p>Para além delas, mais duas senhoras trabalhavam na costura e nos bordados, ensinando muita gente, trabalhando para angariar algum dinheiro, sendo que estas foram as primeiras pessoas remuneradas na instituição.</p>
-<p>Algum dinheiro foi conseguido pela população que visitava este projeto inovador e deixava o seu donativo como 10 escudos, 20 escudos, sendo um dos maiores donativos de 50 escudos.</p>
-<p>Com o dinheiro angariado, o Sr. Pe. Fernando, em 1982, começou por abrir as portas às pessoas mais idosas da aldeia. Abriu um Centro de Dia, inexistente também no nosso concelho. Este mesmo espaço não servia refeições, pois infelizmente o dinheiro não dava para tudo, mas a verdade é que o Centro de Dia era frequentado por muitas pessoas da aldeia.</p>
-<p>A veia de sucesso estava no auge. O Pe. Fernando, em 1983, começou por fazer mais obras e continuou com mais um projeto: o Infantário — o 1º do nosso concelho. Não será preciso dizer que se obteve ainda um maior sucesso: só para perceberem, inscreveram-se 32 crianças no ativo diariamente, onde o próprio sonhador era educador das crianças enquanto não se arranjou uma educadora.</p>
-<p>As refeições começaram por surgir num espaço que se criou nesta Instituição, para servirem o Infantário e o Centro de Dia. Pela escola primária da aldeia foi pedido um espaço onde as crianças pudessem almoçar, sendo este pedido cedido pelo Padre Fernando, vindo os alunos almoçar todos os dias ao refeitório da mesma, sendo o almoço confeccionado na Instituição mas a cargo da cantina escolar, confecionado por uma auxiliar da escola.</p>
-<p>O Sr. Pe. Fernando trabalhava nesta Instituição, bem como os voluntários e funcionários arduamente, pois em 1985 abre as portas para o Lar com 10 camas, onde os idosos e as pessoas com mais necessidades podiam permanecer dia e noite.</p>
-<p>Foi a primeira Instituição a abrir portas do nosso concelho. As verbas eram muito baixas e as exigências já eram muitas, houve necessidade de contratar uma Diretora Técnica, uma Educadora, Colaboradora e as despesas eram cada vez maiores.</p>
-<p>A partir desse ano, tudo começou por ficar mais fácil. Surgiram os apoios da Segurança Social — não eram muitos, mas sempre dava para ajudar. É de lembrar que, quando foi a inauguração, doaram 8.000 escudos (40€). O aquecimento foi oferecido pelo Dr. Adão, e as instalações da Instituição por um habitante da Fontelonga.</p>
-<p>Após a inauguração da Instituição, iniciam com 3 valências que ainda hoje permanecem: Serviço de Apoio Domiciliário, Centro de Dia e Estrutura Residencial para Pessoas Idosas. Com o passar dos tempos conseguiu-se mais uma valência: o ATL para crianças, onde era frequentado por jovens do concelho de Carrazeda de Ansiães.</p>
-<p>Com o passar dos anos e com as várias ofertas de serviços no concelho, em 2014 a Instituição foi obrigada a fechar as portas do Infantário e do ATL, pois não se conseguia conciliar todo este serviço, os custos já eram um pouco elevados. No entanto, no ano de encerramento ainda permaneciam 10 crianças a frequentar o Infantário.</p>
-<p style="font-style: italic;">“Não somos uma casa rica, mas somos uma rica casa cheia de amor.”</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-</div></section>
+              <h1 class="mb-4">
+                Maecenas Vitae <br>
+                Consectetur Led <br>
+                <span class="accent-text">Vestibulum Ante</span>
+              </h1>
 
-<section class="features section" id="servicos">
-<div class="container section-title" data-aos="fade-up">
-<h2>Serviços</h2>
-<p>Atualmente o Centro Social Paroquial de Fontelonga integra 3 respostas sociais: Estrutura Residencial para Pessoas Idosas (ERPI); Centro de Dia (CD); Serviço de Apoio Domiciliário (SAD). A Missão do Centro Social Paroquial de Fontelonga é garantir a satisfação das necessidades humanas básicas e expetativas do cliente com Equidade, Flexibilidade e Transparência.</p>
-</div>
-<div class="container">
-<div class="d-flex justify-content-center">
-<ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
-<li class="nav-item">
-<a class="nav-link active show" data-bs-target="#features-tab-1" data-bs-toggle="tab" href="#erpi" role="tab">
-<h4>Estrutura Residencial para Idosos</h4>
-</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-bs-target="#features-tab-2" data-bs-toggle="tab" href="#centro-dia" role="tab">
-<h4>Centro de Dia</h4>
-</a>
-</li>
-<li class="nav-item">
-<a class="nav-link" data-bs-target="#features-tab-3" data-bs-toggle="tab" href="#apoio-domiciliario" role="tab">
-<h4>Serviço de Apoio Domiciliário</h4>
-</a>
-</li>
-</ul>
-</div>
-<div class="tab-content" data-aos="fade-up" data-aos-delay="200">
-<div class="tab-pane fade active show" id="features-tab-1">
-<div class="row">
-<div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-<h3>Estrutura Residencial Para Idosos</h3>
-<p class="fst-italic">
-                 O Centro Social Paroquial de Fontelonga, a nossa ERPI oferece um lar seguro, confortável e cheio de vida para quem precisa de apoio permanente. Aqui, cada idoso é tratado com dignidade, carinho e atenção personalizada.
+              <p class="mb-4 mb-md-5">
+                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Play Video
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
+
+              <div class="customers-badge">
+                <div class="customer-avatars">
+                  <img src="assets/img/avatar-1.webp" alt="Customer 1" class="avatar">
+                  <img src="assets/img/avatar-2.webp" alt="Customer 2" class="avatar">
+                  <img src="assets/img/avatar-3.webp" alt="Customer 3" class="avatar">
+                  <img src="assets/img/avatar-4.webp" alt="Customer 4" class="avatar">
+                  <img src="assets/img/avatar-5.webp" alt="Customer 5" class="avatar">
+                  <span class="avatar more">12+</span>
+                </div>
+                <p class="mb-0 mt-2">12,000+ lorem ipsum dolor sit amet consectetur adipiscing elit</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-trophy"></i>
+              </div>
+              <div class="stat-content">
+                <h4>3x Won Awards</h4>
+                <p class="mb-0">Vestibulum ante ipsum</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-briefcase"></i>
+              </div>
+              <div class="stat-content">
+                <h4>6.5k Faucibus</h4>
+                <p class="mb-0">Nullam quis ante</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div class="stat-content">
+                <h4>80k Mauris</h4>
+                <p class="mb-0">Etiam sit amet orci</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-award"></i>
+              </div>
+              <div class="stat-content">
+                <h4>6x Phasellus</h4>
+                <p class="mb-0">Vestibulum ante ipsum</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">MORE ABOUT US</span>
+            <h2 class="about-title">Voluptas enim suscipit temporibus</h2>
+            <p class="about-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Lorem ipsum dolor sit amet</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Consectetur adipiscing elit</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Sed do eiusmod tempor</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Incididunt ut labore et</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Dolore magna aliqua</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Ut enim ad minim veniam</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="assets/img/avatar-1.webp" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">Mario Smith</h4>
+                      <p class="profile-position">CEO &amp; Founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Call us anytime</p>
+                      <p class="contact-number">+123 456-789</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about-5.webp" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about-2.webp" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+              <div class="experience-badge floating">
+                <h3>15+ <span>Years</span></h3>
+                <p>Of experience in business service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="d-flex justify-content-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                <h4>Modisit</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                <h4>Praesenti</h4>
+              </a><!-- End tab nav item -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                <h4>Explica</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+
+        </div>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Voluptatem dignissimos provident</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
                 </p>
-<ul>
-<li><i class="bi bi-check2-all"></i> <span>Cuidados de saúde e acompanhamento diário.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Apoio nas atividades da vida diária.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Alimentação equilibrada e adaptada.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Atividades ocupacionais e momentos de lazer.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Espaços acolhedores e equipas delicadas.</span></li>
-</ul>
-</div>
-<div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="Imagem de Idosos" class="img-fluid rounded shadow my-4" src="assets/img/idosos.jpg" style="width: 100%; max-width: 700px;"/>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="features-tab-2">
-<div class="row">
-<div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-<h3>Centro de Dia</h3>
-<p class="fst-italic">
-        O nosso Centro de Dia oferece apoio a idosos que vivem em casa, mas que beneficiam de um espaço onde são acompanhados, cuidados e valorizados ao longo do dia.
-      </p>
-<ul>
-<li><i class="bi bi-check2-all"></i> <span>Acompanhamento diário.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Alimentação (pequeno-almoço, almoço, lanche e jantar) adaptada às necessidades de cada utente.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Cuidados de higiene pessoal.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Atividades lúdicas, sociais, culturais e religiosas.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Acompanhamento a consultas e a exames.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Transporte.</span></li>
-</ul>
-</div>
-<div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="Centro de Dia" class="img-fluid rounded shadow" src="assets/img/centro de dia.jpg" style="max-height: 400px; width: auto;"/>
-</div>
-</div>
-</div>
-<div class="tab-pane fade" id="features-tab-3">
-<div class="row">
-<div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-<h3>Serviço de Apoio Domiciliário</h3>
-<p class="fst-italic">
-                  O nosso Serviço de Apoio Domiciliário leva até casa dos utentes os cuidados essenciais para garantir bem-estar, segurança e dignidade, todos os dias.
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-1.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Neque exercitationem debitis</h3>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
                 </p>
-<ul>
-<li><i class="bi bi-check2-all"></i> <span>Higiene pessoal e conforto.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Higiene habitacional (espaços de uso pessoal).</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Preparação e fornecimento de refeições.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Apoio na medicação (mediante prescrição).</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Companhia e vigilância ativa.</span></li>
-<li><i class="bi bi-check2-all"></i> <span>Transporte e acompanhamento a consultas e exames.</span></li>
-</ul>
-</div>
-<div class="col-lg-6 order-1 order-lg-2 text-center">
-<img alt="" class="img-fluid" src="assets/img/sad.jpg"/>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-2.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
 
-<section class="features-cards section" id="features-cards">
-<div class="container">
-</div>
-</section>
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Voluptatibus commodi accusamu</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                </ul>
+                <p class="fst-italic">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna aliqua.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features-illustration-3.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
 
-<section class="call-to-action section" id="call-to-action">
-<div class="container" data-aos="fade-up" data-aos-delay="100">
-<div class="row content justify-content-center align-items-center position-relative">
-<div class="col-lg-8 mx-auto text-center">
-<h2 class="display-4 mb-4">Ajuda-nos a Ajudar!</h2>
-<p class="mb-4">Trabalhamos por amor e alegria. Ajude a nossa missão.</p>
-<li><a class="btn btn-cta" href="donativos.html">Donativos</a></li>
-</div>
-</div>
-</div></section>
+        </div>
 
-<section class="testimonials section light-background" id="testimonials">
+      </div>
 
-<div class="container section-title" data-aos="fade-up">
-<section class="section bg-light py-5" id="testemunhos">
-<div class="container">
-<div class="section-title text-center mb-5">
-<section class="section bg-light py-5" id="testemunhos">
-<div class="container">
-<div class="section-title text-center mb-5">
-<h2>Testemunhos</h2>
-<hr class="mx-auto" style="width: 60px; border-top: 2px solid #1a73e8;"/>
-</div>
-<div class="row justify-content-center">
+    </section><!-- /Features Section -->
 
-<div class="col-md-6 mb-4">
-<div class="card p-4 h-100 shadow-sm border-0">
-<div class="d-flex align-items-center mb-3">
-<img alt="Pe. Humberto Coelho" class="rounded-circle me-3" height="70" src="assets/img/pe.jpg" style="object-fit: cover;" width="70"/>
-<div>
-<h5 class="mb-0">Pe. Humberto Coelho</h5>
-<small>Presidente da IPSS Centro Social Paroquial de Fontelonga</small>
-</div>
-</div>
-<p style="text-align: justify;">
-            No Centro Social Paroquial de Fontelonga, procuramos ser mais do que uma instituição. 
-            Queremos ser uma verdadeira família de famílias. 
-            Aqui, cada pessoa é acolhida com respeito, carinho e dedicação, porque acreditamos que é no cuidado mútuo e na proximidade que se constrói uma comunidade forte e solidária, agradecida e enriquecida com o testemunho de tantas vidas e histórias.
-            Guiados pelos valores cristãos, colocamos no centro da nossa missão o serviço ao próximo, especialmente aos mais frágeis e vulneráveis. 
-            É com alegria e espírito de comunhão que caminhamos juntos, com os olhos postos no bem de todos.
-            <br/><br/><strong>Seja bem-vindo. Aqui há lugar para si.</strong>
-</p>
-</div>
-</div>
+    <!-- Features Cards Section -->
+    <section id="features-cards" class="features-cards section">
 
-<div class="col-md-6 mb-4">
-<div class="card p-4 h-100 shadow-sm border-0">
-<div class="d-flex align-items-center mb-3">
-<img alt="Maria Fernandes" class="rounded-circle me-3" height="70" src="assets/img/cremilde.jpg" style="object-fit: cover;" width="70"/>
-<div>
-<h5 class="mb-0">Cremilde Morais</h5>
-<small>Utente</small>
-</h5></div>
-</div>
-<p style="text-align: justify;">
-            O Centro Social Paroquial de Fontelonga não é um Lar de velhos. É uma casa de família onde me sinto muito feliz. sou bem tratada e acarinhada por todos que aqui trabalham. Aqui há muito amor.
-			Tenho 92 anos e estou aqui em permanência há 14 anos!
-			Quero agradecer à bela equipa que tudo fazem para que nós nos sintamos em casa.
-          </p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="section bg-light py-5" id="contas">
-<div class="container">
-<div class="section-title text-center mb-4">
-<h2>Contas de Gerência</h2>
-<hr class="mx-auto" style="width: 60px; border-top: 2px solid #1a73e8;"/>
-<p class="mt-3">Clique no ano para ver os documentos disponíveis</p>
-</div>
-<div class="accordion" id="accordionContas">
+      <div class="container">
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2017">
-<button aria-controls="collapse2017" aria-expanded="false" class="accordion-button collapsed" type="button">
-            Ano 2017
-          </button>
-</h2>
-<div aria-labelledby="heading2017" class="accordion-collapse collapse" id="collapse2017">
-<div class="accordion-body">
-<ul class="list-group">
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Ata do Conselho Fiscal
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/ata conselho fiscal.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/ata conselho fiscal.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Ata da Direção
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/ata direção.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/ata direção.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Balancete Geral 12
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnBalanceteGeral12.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnBalanceteGeral12.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Balancete Geral 13
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnBalanceteGeral13.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnBalanceteGeral13.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Balancete Geral 14
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnBalanceteGeral14.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnBalanceteGeral14.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Demonstração Financeira – Balanço
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasBalanco.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasBalanco.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Demonstração Financeira – Fluxo de Caixa
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasFluxoCaixa.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasFluxoCaixa.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Resultados por Funções
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosFuncoes.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosFuncoes.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Resultados por Natureza
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosNatureza.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/rptCnDemoFinanceirasResultadosNatureza.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-                Anexo ao Relatório de Contas
-                <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas e contas 2017/Anexo Relatorio de Contas FL 2017.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas e contas 2017/Anexo Relatorio de Contas FL 2017.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+        <div class="row gy-4">
 
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-box orange">
+              <i class="bi bi-award"></i>
+              <h4>Corporis voluptates</h4>
+              <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+          </div><!-- End Feature Borx-->
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2018">
-<button aria-controls="collapse2018" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2018
-    </button>
-</h2>
-<div aria-labelledby="heading2018" class="accordion-collapse collapse" id="collapse2018">
-<div class="accordion-body">
-<ul class="list-group">
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balanço Financeiro
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/1rptCnDemoFinanceirasBalanco.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/1rptCnDemoFinanceirasBalanco.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Resultados por Natureza
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/2rptCnDemoFinanceirasResultadosNaturezas.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/2rptCnDemoFinanceirasResultadosNaturezas.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Resultados por Funções - Lar de Idosos
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/3rptCnDemoFinanceirasResultadosFuncoes900101.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/3rptCnDemoFinanceirasResultadosFuncoes900101.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Resultados por Funções - Apoio Domiciliário
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/4rptCnDemoFinanceirasResultadosFuncoes900103.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/4rptCnDemoFinanceirasResultadosFuncoes900103.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Resultados por Funções - Centro de Dia
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/5rptCnDemoFinanceirasResultadosFuncoes900104.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/5rptCnDemoFinanceirasResultadosFuncoes900104.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Fluxos de Caixa
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/6rptCnDemoFinanceirasFluxoCaixa.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/6rptCnDemoFinanceirasFluxoCaixa.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balancete Geral 12
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/7rptCnBalanceteGeral12.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/7rptCnBalanceteGeral12.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balancete Geral 13
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/8rptCnBalanceteGeral13.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/8rptCnBalanceteGeral13.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balancete Geral 14
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2018/9rptCnBalanceteGeral14.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2018/9rptCnBalanceteGeral14.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2019">
-<button aria-controls="collapse2019" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2019
-    </button>
-</h2>
-<div aria-labelledby="heading2019" class="accordion-collapse collapse" id="collapse2019">
-<div class="accordion-body">
-<ul class="list-group">
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Anexo às Demonstrações Financeiras
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/2AnexoAsDemonstracoesFinanceiras2019.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/2AnexoAsDemonstracoesFinanceiras2019.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balancete Geral
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balancete Geral.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balancete Geral.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balancete Geral 2
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balancete Geral 2.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balancete Geral 2.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balancete Geral 3
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balancete Geral 3.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balancete Geral 3.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Balanço
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Balanço.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Balanço.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-         Resultado por Funções - Apoio Domiciliário
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Apoio Domiciliário.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Apoio Domiciliário.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-         Resultado por Funções - Centro de Dia
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Centro de Dia.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Centro de Dia.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-         Resultado por Funções - Lar de Idosos
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Lar de idosos.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Funções - Lar de idosos.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-         Demonstração dos Resultados por Naturezas
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Demonstração dos Resultados por Naturezas.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Demonstração dos Resultados por Naturezas.pdf">Download</a>
-</div>
-</li>
-<li class="list-group-item d-flex justify-content-between align-items-center">
-         Fluxos de Caixa
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2019/Fluxos de caixa.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2019/Fluxos de caixa.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-box blue">
+              <i class="bi bi-patch-check"></i>
+              <h4>Explicabo consectetur</h4>
+              <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
+            </div>
+          </div><!-- End Feature Borx-->
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2020">
-<button aria-controls="collapse2020" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2020
-    </button>
-</h2>
-<div aria-labelledby="heading2020" class="accordion-collapse collapse" id="collapse2020">
-<div class="accordion-body">
-<ul class="list-group">
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-box green">
+              <i class="bi bi-sunrise"></i>
+              <h4>Ullamco laboris</h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+          </div><!-- End Feature Borx-->
 
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Relatório de Contas 2020
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2020/Contas 2020.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2020/Contas 2020.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+          <div class="col-xl-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="feature-box red">
+              <i class="bi bi-shield-check"></i>
+              <h4>Labore consequatur</h4>
+              <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            </div>
+          </div><!-- End Feature Borx-->
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2021">
-<button aria-controls="collapse2021" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2021
-    </button>
-</h2>
-<div aria-labelledby="heading2021" class="accordion-collapse collapse" id="collapse2021">
-<div class="accordion-body">
-<ul class="list-group">
+        </div>
 
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Relatório de Contas 2021
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2021/Contas 2021.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2021/Contas 2021.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+      </div>
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2022">
-<button aria-controls="collapse2022" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2022
-    </button>
-</h2>
-<div aria-labelledby="heading2022" class="accordion-collapse collapse" id="collapse2022">
-<div class="accordion-body">
-<ul class="list-group">
+    </section><!-- /Features Cards Section -->
 
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Relatório de Contas 2022
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2022/Contas 2022.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2022/Contas 2022.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+    <!-- Features 2 Section -->
+    <section id="features-2" class="features-2 section">
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2023">
-<button aria-controls="collapse2023" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2023
-    </button>
-</h2>
-<div aria-labelledby="heading2023" class="accordion-collapse collapse" id="collapse2023">
-<div class="accordion-body">
-<ul class="list-group">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Relatório de Contas 2023
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2023/Contas 2023.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2023/Contas 2023.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
+        <div class="row align-items-center">
 
-<div class="accordion-item">
-<h2 class="accordion-header" id="heading2024">
-<button aria-controls="collapse2024" aria-expanded="false" class="accordion-button collapsed" type="button">
-      Ano 2024
-    </button>
-</h2>
-<div aria-labelledby="heading2024" class="accordion-collapse collapse" id="collapse2024">
-<div class="accordion-body">
-<ul class="list-group">
+          <div class="col-lg-4">
 
-<li class="list-group-item d-flex justify-content-between align-items-center">
-          Relatório de Contas 2024
-          <div>
-<a class="btn btn-primary btn-sm me-2" href="assets/atas-contas-2024/Contas 2024.pdf" target="_blank">Ver</a>
-<a class="btn btn-outline-secondary btn-sm" download="" href="assets/atas-contas-2024/Contas 2024.pdf">Download</a>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<section class="mural-das-atividades section py-5 bg-light" id="mural">
-<div class="container">
-<div class="text-center mb-4">
-<h2 class="fw-bold">Mural das Atividades</h2>
-<p class="text-muted">Espaço onde partilhamos alguns dos momentos vividos no nosso Centro</p>
-</div>
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="200">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Use On Any Device</h3>
+                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-display"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-<div id="carouselMural" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
-<div class="carousel-inner">
+            <div class="feature-item text-end mb-5" data-aos="fade-right" data-aos-delay="300">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Feather Icons</h3>
+                  <p>Phasellus ullamcorper ipsum rutrum nunc nunc nonummy metus vestibulum volutpat sapien arcu sed augue aliquam erat volutpat.</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-feather"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-<div class="carousel-item active">
-<img alt="Santos Populares no Centro" class="d-block w-100 img-fluid" src="assets/img/s-joao-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption">
-<h5 class="titulo-slide">São João 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+            <div class="feature-item text-end" data-aos="fade-right" data-aos-delay="400">
+              <div class="d-flex align-items-center justify-content-end gap-4">
+                <div class="feature-content">
+                  <h3>Retina Ready</h3>
+                  <p>Aenean tellus metus bibendum sed posuere ac mattis non nunc vestibulum fringilla purus sit amet fermentum aenean commodo.</p>
+                </div>
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-eye"></i>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-<div class="carousel-item">
-<img alt="Visita a Santiago de Compostela 2025" class="d-block w-100 img-fluid" src="assets/img/santiago-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Visita a Santiago de Compostela 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+          </div>
 
-<div class="carousel-item">
-<img alt="Passeio de Barco 2025" class="d-block w-100 img-fluid" src="assets/img/barco.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Passeio de Barco 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="phone-mockup text-center">
+              <img src="assets/img/phone-app-screen.webp" alt="Phone Mockup" class="img-fluid">
+            </div>
+          </div><!-- End Phone Mockup -->
 
-<div class="carousel-item">
-<img alt="Dia do Pai 2025" class="d-block w-100 img-fluid" src="assets/img/dia-do-pai-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Dia do Pai 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+          <div class="col-lg-4">
 
-<div class="carousel-item">
-<img alt="Cortejo de Carnaval 2025" class="d-block w-100 img-fluid" src="assets/img/cortejo-carnaval-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Cortejo de Carnaval 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="d-flex align-items-center gap-4">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-code-square"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>W3c Valid Code</h3>
+                  <p>Donec vitae sapien ut libero venenatis faucibus nullam quis ante etiam sit amet orci eget eros faucibus tincidunt.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-<div class="carousel-item">
-<img alt="Visita à Rádio Ansiães 2025" class="d-block w-100 img-fluid" src="assets/img/radio-ansiaes-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Visita à Rádio Ansiães 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+            <div class="feature-item mb-5" data-aos="fade-left" data-aos-delay="300">
+              <div class="d-flex align-items-center gap-4">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-phone"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Fully Responsive</h3>
+                  <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-<div class="carousel-item">
-<img alt="Missão País 2025" class="d-block w-100 img-fluid" src="assets/img/missao-pais-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Missão País 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+            <div class="feature-item" data-aos="fade-left" data-aos-delay="400">
+              <div class="d-flex align-items-center gap-4">
+                <div class="feature-icon flex-shrink-0">
+                  <i class="bi bi-browser-chrome"></i>
+                </div>
+                <div class="feature-content">
+                  <h3>Browser Compatibility</h3>
+                  <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi aenean vulputate.</p>
+                </div>
+              </div>
+            </div><!-- End .feature-item -->
 
-<div class="carousel-item">
-<img alt="Cantar dos Reis 2025" class="d-block w-100 img-fluid" src="assets/img/cantar-reis-2025.jpg" style="max-height: 500px; object-fit: cover;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Cantar dos Reis 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-</div>
+          </div>
+        </div>
 
-<button class="carousel-control-prev" type="button" data-bs-target="#carouselMural" data-bs-slide="prev">
-<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-<span class="visually-hidden">Anterior</span>
-</button>
-<button class="carousel-control-next" type="button" data-bs-target="#carouselMural" data-bs-slide="next">
-<span aria-hidden="true" class="carousel-control-next-icon"></span>
-<span class="visually-hidden">Seguinte</span>
-</button>
-</div>
-</div>
-</section>
+      </div>
 
-<section class="faq-9 faq section light-background" id="faq">
-<div class="container">
-<div class="row">
-<div class="col-lg-5" data-aos="fade-up">
-<h2 class="faq-title">Perguntas Frequentes</h2>
-<p class="faq-description"></p>
-<div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
-<svg class="faq-arrow" fill="none" height="211" viewbox="0 0 200 211" width="200" xmlns="http://www.w3.org/2000/svg">
-<path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
-</svg>
-</div>
-</div>
-<div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
-<div class="faq-container">
-<div class="faq-item faq-active">
-<h3>Quem pode ser admitido no Centro Social Paroquial de Fontelonga?</h3>
-<div class="faq-content">
-<p>Qualquer pessoa idosa que necessite de apoio social, cuidados de saúde ou acompanhamento pode candidatar-se. A admissão depende da disponibilidade de vagas.</p>
-</div>
-<i class="faq-toggle bi bi-chevron-right"></i>
-</div>
-<div class="faq-item">
-<h3>Como posso fazer uma candidatura para um familiar?</h3>
-<div class="faq-content">
-<p>Basta entrar em contacto connosco por telefone ou e-mail e marcar uma reunião para avaliação. Também pode visitar as nossas instalações com marcação prévia.</p>
-</div>
-<i class="faq-toggle bi bi-chevron-right"></i>
-</div>
-<div class="faq-item">
-<h3>Qual o horário das visitas?</h3>
-<div class="faq-content">
-<p>O horário das visitas é: das 10h30m até às 12h, das 14h até às 16h e das 17h até as 18h30m.</p>
-</div>
-<i class="faq-toggle bi bi-chevron-right"></i>
-</div>
-<div class="faq-item">
-<h3>É possível apoiar o Centro Social com donativos?</h3>
-<div class="faq-content">
-<p>Sim! Aceitamos donativos monetários ou materiais (alimentos, roupas, equipamentos, etc). Pode fazê-lo através da nossa página de donativos ou contactando-nos diretamente.</p>
-</div>
-<i class="faq-toggle bi bi-chevron-right"></i>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="contact" id="contact">
-<div class="container" data-aos="fade-up">
-<div class="contact-box bg-primary text-white rounded p-4 w-100">
-<h2 class="text-center mb-3">Contactos</h2>
-<p class="text-center mb-4">Contacte-nos através dos vários canais disponíveis.</p>
-<div class="row text-center text-md-start">
-<div class="col-md-4 mb-4">
-<div class="d-flex align-items-start justify-content-center justify-content-md-start">
-<i class="bi bi-geo-alt fs-3 me-3"></i>
-<div>
-<h5 class="mb-1">A nossa localização</h5>
-<p class="mb-0">Rua Padre Fernando Ribeiro nº22<br/>5140-142 Fontelonga<br/>Carrazeda de Ansiães</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-4">
-<div class="d-flex align-items-start justify-content-center justify-content-md-start">
-<i class="bi bi-telephone fs-3 me-3"></i>
-<div>
-<h5 class="mb-1">Telf./Telm.</h5>
-<p class="mb-0">278 615 039<br/>933 317 837</p>
-</div>
-</div>
-</div>
-<div class="col-md-4 mb-4">
-<div class="d-flex align-items-start justify-content-center justify-content-md-start">
-<i class="bi bi-envelope fs-3 me-3"></i>
-<div>
-<h5 class="mb-1">Endereço de Email</h5>
-<p class="mb-0">cspfontelongaa@sapo.com</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="mapa" style="width: 100vw; height: 500px; margin: 0; padding: 0;">
-<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.612459977471!2d-7.263858500000034!3d41.23021510000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3b71a31be9f47d%3A0x8df1be2b134916b1!2sCentro%20Social%20e%20Paroquial%20de%20Fontelonga!5e0!3m2!1spt-PT!2spt!4v1752746562665!5m2!1spt-PT!2spt" style="border:0;" width="100%"></iframe>
-</section>
-</div></div></section>
-</div></div></section></div></section></main>
+    </section><!-- /Features 2 Section -->
 
-<footer class="footer" id="footer">
-<div class="container">
-<div class="row footer-section text-start justify-content-between">
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section">
 
-<div class="col-md-4">
-<h5>Links Úteis</h5>
-<ul class="list-unstyled">
-<li><a href="#">Início</a></li>
-<li><a href="#sobre">Sobre nós</a></li>
-<li><a href="#contact">Contactos</a></li>
-</ul>
-</div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-<div class="col-md-8">
-<h5>A Nossa Missão</h5>
-<p style="text-align: justify;">
-            O Centro Social Paroquial de Fontelonga promove o bem-estar, a solidariedade e o acompanhamento das famílias e dos mais frágeis. É com alegria e espírito de serviço que caminhamos juntos.
-          </p>
-</div>
-</div>
-<hr class="my-3"/>
-<div class="text-center small">
-        © Copyright <strong>Centro Social Paroquial de Fontelonga</strong> – Todos os direitos reservados<br/>
-</div>
-</div>
-</footer>
+        <div class="row content justify-content-center align-items-center position-relative">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="display-4 mb-4">Maecenas tempus tellus eget condimentum</h2>
+            <p class="mb-4">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel</p>
+            <a href="#" class="btn btn-cta">Call To Action</a>
+          </div>
 
-<a class="scroll-top d-flex align-items-center justify-content-center" href="#" id="scroll-top">
-<i class="bi bi-arrow-up-short"></i>
-</a>
+          <!-- Abstract Background Elements -->
+          <div class="shape shape-1">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path d="M47.1,-57.1C59.9,-45.6,68.5,-28.9,71.4,-10.9C74.2,7.1,71.3,26.3,61.5,41.1C51.7,55.9,35,66.2,16.9,69.2C-1.3,72.2,-21,67.8,-36.9,57.9C-52.8,48,-64.9,32.6,-69.1,15.1C-73.3,-2.4,-69.5,-22,-59.4,-37.1C-49.3,-52.2,-32.8,-62.9,-15.7,-64.9C1.5,-67,34.3,-68.5,47.1,-57.1Z" transform="translate(100 100)"></path>
+            </svg>
+          </div>
 
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-<script src="assets/vendor/aos/aos.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+          <div class="shape shape-2">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path d="M41.3,-49.1C54.4,-39.3,66.6,-27.2,71.1,-12.1C75.6,3,72.4,20.9,63.3,34.4C54.2,47.9,39.2,56.9,23.2,62.3C7.1,67.7,-10,69.4,-24.8,64.1C-39.7,58.8,-52.3,46.5,-60.1,31.5C-67.9,16.4,-70.9,-1.4,-66.3,-16.6C-61.8,-31.8,-49.7,-44.3,-36.3,-54C-22.9,-63.7,-8.2,-70.6,3.6,-75.1C15.4,-79.6,28.2,-58.9,41.3,-49.1Z" transform="translate(100 100)"></path>
+            </svg>
+          </div>
 
-<script src="assets/js/main.js"></script>
+          <!-- Dot Pattern Groups -->
+          <div class="dots dots-1">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="dot-pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+              </pattern>
+              <rect width="100" height="100" fill="url(#dot-pattern)"></rect>
+            </svg>
+          </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const mapping = {
-    "Estrutura Residencial Para Idosos": "#features-tab-1",
-    "Centro de Dia": "#features-tab-2",
-    "Apoio Domiciliário": "#features-tab-3"
-  };
+          <div class="dots dots-2">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <pattern id="dot-pattern-2" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="2" fill="currentColor"></circle>
+              </pattern>
+              <rect width="100" height="100" fill="url(#dot-pattern-2)"></rect>
+            </svg>
+          </div>
 
-  document.querySelectorAll(".stat-item h4").forEach(h4 => {
-    h4.closest("a")?.addEventListener("click", function(e) {
-      e.preventDefault();
-      const title = h4.textContent.trim();
-      const targetTab = mapping[title];
-      const tabTrigger = document.querySelector(`a[data-bs-target='${targetTab}']`);
-      if (tabTrigger) {
-        // Ativa a tab correta
-        const tab = new bootstrap.Tab(tabTrigger);
-        tab.show();
-      }
-      // Scroll suave até secção serviços
-      document.querySelector("#servicos").scrollIntoView({behavior: "smooth"});
-    });
-  });
-});
-</script></html>
+          <div class="shape shape-3">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path d="M43.3,-57.1C57.4,-46.5,71.1,-32.6,75.3,-16.2C79.5,0.2,74.2,19.1,65.1,35.3C56,51.5,43.1,65,27.4,71.7C11.7,78.4,-6.8,78.3,-23.9,72.4C-41,66.5,-56.7,54.8,-65.4,39.2C-74.1,23.6,-75.8,4,-71.7,-13.2C-67.6,-30.4,-57.7,-45.2,-44.3,-56.1C-30.9,-67,-15.5,-74,0.7,-74.9C16.8,-75.8,33.7,-70.7,43.3,-57.1Z" transform="translate(100 100)"></path>
+            </svg>
+          </div>
+        </div>
 
-<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background: #222; color: white; padding: 15px; text-align: center; z-index: 9999;">
-  Este site utiliza cookies para garantir que tem a melhor experiência. <a href="#" style="color: #0d6efd;">Saiba mais</a>.
-  <button class="btn btn-light btn-sm" onclick="aceitarCookies()" style="margin-left: 10px;">Aceitar</button>
-</div>
-<script>
-  function aceitarCookies() {
-    document.getElementById('cookie-banner').style.display = 'none';
-    localStorage.setItem('cookiesAceites', 'true');
-  }
-  window.onload = function() {
-    if (localStorage.getItem('cookiesAceites') === 'true') {
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-  }
-</script>
+      </div>
 
+    </section><!-- /Call To Action Section -->
 
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
 
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
+      </div>
 
+    </section><!-- /Clients Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="testimonial-item">
+              <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div><!-- End testimonial item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Clients</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Support</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Workers</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-activity"></i>
+              </div>
+              <div>
+                <h3>Nesciunt Mete</h3>
+                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+              <div>
+                <h3>Eosle Commodi</h3>
+                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-easel"></i>
+              </div>
+              <div>
+                <h3>Ledo Markt</h3>
+                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <div>
+                <h3>Asperiores Commodit</h3>
+                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+                <a href="service-details.html" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 justify-content-center">
+
+          <!-- Basic Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-card">
+              <h3>Basic Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">9.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Duis aute irure dolor
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Excepteur sint occaecat
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Nemo enim ipsam voluptatem
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Standard Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-card popular">
+              <div class="popular-badge">Most Popular</div>
+              <h3>Standard Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">19.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Lorem ipsum dolor sit amet
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Consectetur adipiscing elit
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Sed do eiusmod tempor
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Ut labore et dolore magna
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-light">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="pricing-card">
+              <h3>Premium Plan</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">39.9</span>
+                <span class="period">/ month</span>
+              </div>
+              <p class="description">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</p>
+
+              <h4>Featured Included:</h4>
+              <ul class="features-list">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Temporibus autem quibusdam
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Saepe eveniet ut et voluptates
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Nam libero tempore soluta
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Cumque nihil impedit quo
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  Maxime placeat facere possimus
+                </li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">
+                Buy Now
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    <!-- Faq Section -->
+    <section class="faq-9 faq section light-background" id="faq">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5" data-aos="fade-up">
+            <h2 class="faq-title">Have a question? Check out the FAQ</h2>
+            <p class="faq-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
+            <div class="faq-arrow d-none d-lg-block" data-aos="fade-up" data-aos-delay="200">
+              <svg class="faq-arrow" width="200" height="211" viewBox="0 0 200 211" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M198.804 194.488C189.279 189.596 179.529 185.52 169.407 182.07L169.384 182.049C169.227 181.994 169.07 181.939 168.912 181.884C166.669 181.139 165.906 184.546 167.669 185.615C174.053 189.473 182.761 191.837 189.146 195.695C156.603 195.912 119.781 196.591 91.266 179.049C62.5221 161.368 48.1094 130.695 56.934 98.891C84.5539 98.7247 112.556 84.0176 129.508 62.667C136.396 53.9724 146.193 35.1448 129.773 30.2717C114.292 25.6624 93.7109 41.8875 83.1971 51.3147C70.1109 63.039 59.63 78.433 54.2039 95.0087C52.1221 94.9842 50.0776 94.8683 48.0703 94.6608C30.1803 92.8027 11.2197 83.6338 5.44902 65.1074C-1.88449 41.5699 14.4994 19.0183 27.9202 1.56641C28.6411 0.625793 27.2862 -0.561638 26.5419 0.358501C13.4588 16.4098 -0.221091 34.5242 0.896608 56.5659C1.8218 74.6941 14.221 87.9401 30.4121 94.2058C37.7076 97.0203 45.3454 98.5003 53.0334 98.8449C47.8679 117.532 49.2961 137.487 60.7729 155.283C87.7615 197.081 139.616 201.147 184.786 201.155L174.332 206.827C172.119 208.033 174.345 211.287 176.537 210.105C182.06 207.125 187.582 204.122 193.084 201.144C193.346 201.147 195.161 199.887 195.423 199.868C197.08 198.548 193.084 201.144 195.528 199.81C196.688 199.192 197.846 198.552 199.006 197.935C200.397 197.167 200.007 195.087 198.804 194.488ZM60.8213 88.0427C67.6894 72.648 78.8538 59.1566 92.1207 49.0388C98.8475 43.9065 106.334 39.2953 114.188 36.1439C117.295 34.8947 120.798 33.6609 124.168 33.635C134.365 33.5511 136.354 42.9911 132.638 51.031C120.47 77.4222 86.8639 93.9837 58.0983 94.9666C58.8971 92.6666 59.783 90.3603 60.8213 88.0427Z" fill="currentColor"></path>
+              </svg>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="300">
+            <div class="faq-container">
+
+              <div class="faq-item faq-active">
+                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <div class="faq-content">
+                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Feugiat scelerisque varius morbi enim nunc faucibus?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <div class="faq-content">
+                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?</h3>
+                <div class="faq-content">
+                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Tempus quam pellentesque nec nam aliquam sem et tortor?</h3>
+                <div class="faq-content">
+                  <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+              <div class="faq-item">
+                <h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
+                <div class="faq-content">
+                  <p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis et consequatur non sed in suscipit sequi. Distinctio ipsam dolore et.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div><!-- End Faq item-->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- /Faq Section -->
+
+    <!-- Call To Action 2 Section -->
+    <section id="call-to-action-2" class="call-to-action-2 section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Call To Action</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a class="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action 2 Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h3>Contact Info</h3>
+              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="content">
+                  <h4>Our Location</h4>
+                  <p>A108 Adam Street</p>
+                  <p>New York, NY 535022</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+1 5589 55488 55</p>
+                  <p>+1 6678 254445 41</p>
+                </div>
+              </div>
+
+              <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>info@example.com</p>
+                  <p>contact@example.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3>Get In Touch</h3>
+              <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">iLanding</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">iLanding</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
