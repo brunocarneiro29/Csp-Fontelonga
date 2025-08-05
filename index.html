@@ -396,63 +396,49 @@
   visibility: visible;
 }
   </style>
- </head>
- <header class="header fixed-top d-flex align-items-center" id="header">
-  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-   <a class="logo d-flex align-items-center" href="index.html">
-    <img alt="Logo Pequeno" src="assets/img/logo.png" style="height: 40px;"/>
-   </a>
-   <nav class="navbar" id="navbar">
-    <ul class="d-flex align-items-center m-0 p-0 list-unstyled">
-     <li>
-      <a class="nav-link px-2" href="#hero">
-       Início
+ 
+  <style>
+    .site-header {
+      background: #fff;
+      border-radius: 50px;
+      margin: 20px auto;
+      padding: 10px 20px;
+      max-width: 1200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .site-header .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .mobile-nav-toggle,
+    .mobile-nav {
+      display: none !important;
+    }
+  </style>
+
+</head>
+ 
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="logo" style="display: flex; align-items: center;">
+        <img src="assets/img/logo.png" alt="Centro Social Paroquial de Fontelonga">
+        <span class="sitename" style="margin-left:8px; font-weight:600; color:#1d3557;">Centro Social Paroquial de Fontelonga</span>
       </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#about">
-       Sobre Nós
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#services">
-       Serviços
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#portfolio">
-       Mural
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#team">
-       Testemunhos
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#pricing">
-       Contas
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#faq">
-       FAQ
-      </a>
-     </li>
-     <li>
-      <a class="nav-link px-2" href="#contact">
-       Contactos
-      </a>
-     </li>
-     <li>
-      <a class="btn btn-primary ms-3" href="donativos.html" style="border-radius:20px;">
-       Donativos
-      </a>
-     </li>
-    </ul>
-   </nav>
-  </div>
- </header>
+      <nav class="main-nav">
+        <ul style="list-style:none; display:flex; gap:24px; margin:0; padding:0;">
+          <li><a href="#home" style="text-decoration:none; color:#333; font-weight:500;">Home</a></li>
+          <li><a href="#sobre" style="text-decoration:none; color:#333; font-weight:500;">Sobre nós</a></li>
+          <li><a href="#servicos" style="text-decoration:none; color:#333; font-weight:500;">Serviços</a></li>
+          <li><a href="#contas" style="text-decoration:none; color:#333; font-weight:500;">Contas de Gerência</a></li>
+          <li><a href="#mural" style="text-decoration:none; color:#333; font-weight:500;">Mural das Atividades</a></li>
+          <li><a href="#contactos" style="text-decoration:none; color:#333; font-weight:500;">Contactos</a></li>
+        </ul>
+      </nav>
+      <a href="#donativos" class="btn-donativos" style="background-color:#007bff; color:#fff; padding:8px 16px; border-radius:25px; text-decoration:none; font-weight:600;">Donativos</a>
+    </div>
+  </header>
+
  <main class="main">
   <section class="hero section" id="hero">
    <div class="container" data-aos="fade-up" data-aos-delay="100">
