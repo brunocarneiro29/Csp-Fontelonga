@@ -23,85 +23,36 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-
-
-
-<!-- Refined Single-Line Header CSS -->
+<!-- Custom Mobile Header CSS -->
 <style>
-  body {
-    background: #e6f7ff;
-  }
   header {
-    background: transparent !important;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    z-index: 1030;
+    padding: 0.5rem 0;
   }
-  .navbar-custom {
-    background: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 50px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* remove max-width to use full container */
-    width: calc(100% - 2rem);
-    margin: 1rem auto;
-    white-space: nowrap;
-    overflow-x: auto;
-  }
-  .navbar-custom .navmenu ul {
-    list-style: none;
-    display: inline-flex;
-    gap: 0.75rem;
-    margin: 0;
-    padding: 0;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 0 1rem;
     white-space: nowrap;
   }
-  .navbar-custom .nav-link {
-    color: #333;
-    font-weight: 500;
-    font-size: 0.85rem;
-    text-decoration: none;
-    padding: 0.4rem 0.6rem;
-    white-space: nowrap;
+  .header-wrapper .logo-text {
+    display: none;
   }
-  .navbar-custom .nav-link.active {
-    color: #0d6efd;
+  .header-wrapper .navmenu {
+    display: none;
   }
-  .btn-getstarted {
-    padding: 0.4rem 1rem;
-    border-radius: 50px;
-    font-weight: 500;
-    white-space: nowrap;
-    margin-left: 1rem;
-  }
-  @media (max-width: 991px) {
-    .navbar-custom .navmenu {
-      display: none !important;
-    }
-  }
-
-  /* Reduce spacing between header and hero badge */
-  #hero, .hero.section {
-    padding-top: 40px !important;
-  }
-
-
-<!-- Mobile Button Fix CSS -->
-<style>
-  @media (max-width: 991px) {
-    .navbar-custom {
-      overflow-x: visible !important;
-    }
-    .btn-getstarted {
-      position: relative;
-      z-index: 1050;
-    }
+  .header-wrapper .btn-donativos {
+    flex-shrink: 0;
   }
 </style>
-</style>
-
-
-
 
   <!-- Header Custom CSS -->
   <style>
@@ -116,29 +67,15 @@
 
 
 
-
 <header>
-  <div class="navbar-custom">
+  <div class="header-wrapper">
     <a href="/" class="logo d-flex align-items-center">
-      <img src="assets/img/cspf.png" alt="Logo" style="height:40px;">
-      <span class="ms-2 fw-bold">
-        Centro Social Paroquial de <span style="color:#0d6efd;">Fontelonga</span>
-      </span>
+      <img src="assets/img/cspf.png" alt="Logo" style="height:32px;"/>
+      <span class="logo-text" style="margin-left:0.5rem;font-weight:700;color:#0d6efd;">Centro Social Paroquial de Fontelonga</span>
     </a>
-    <nav class="navmenu d-flex align-items-center">
-      <ul>
-        <li><a class="nav-link active" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#sobre">Sobre nós</a></li>
-        <li><a class="nav-link" href="#servicos">Serviços</a></li>
-        <li><a class="nav-link" href="#contas">Contas de Gerência</a></li>
-        <li><a class="nav-link" href="#mural">Mural das Atividades</a></li>
-        <li><a class="nav-link" href="#contactos">Contactos</a></li>
-      </ul>
-    </nav>
-    <a href="donativos.html" class="btn btn-primary btn-getstarted">Donativos</a>
+    <a href="donativos.html" class="btn btn-primary btn-donativos">Donativos</a>
   </div>
 </header>
-
 
 
 
