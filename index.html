@@ -61,11 +61,24 @@
     font-weight: 500;
   }
 
-  /* Hide nav menu on mobile */
+    /* Hide nav menu on mobile */
   @media (max-width: 991px) {
     .navbar-custom .navmenu {
       display: none;
     }
+  }
+
+  /* Updated iLanding Header CSS with no-wrap */
+  .navbar-custom .navmenu ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
   }
 </style>
 
