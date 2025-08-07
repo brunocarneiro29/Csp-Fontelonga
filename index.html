@@ -23,23 +23,6 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-<!-- Reduce spacing around map and footer -->
-<style>
-  /* Map section */
-  #mapa {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  #mapa iframe {
-    margin-bottom: 0 !important;
-  }
-  /* Footer spacing */
-  footer.footer {
-    margin-top: 0 !important;
-    padding-top: 10px !important;
-  }
-</style>
-
 
 
 
@@ -102,6 +85,19 @@
     padding-top: 40px !important;
   }
 
+
+<!-- Mobile Button Fix CSS -->
+<style>
+  @media (max-width: 991px) {
+    .navbar-custom {
+      overflow-x: visible !important;
+    }
+    .btn-getstarted {
+      position: relative;
+      z-index: 1050;
+    }
+  }
+</style>
 </style>
 
 
