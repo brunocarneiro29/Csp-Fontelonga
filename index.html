@@ -23,15 +23,11 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-<!-- Mobile Header Fix CSS -->
+
+<!-- Updated Header & Hero Spacing CSS -->
 <style>
-  header {
-    position: sticky;
-    top: 0;
-    background: transparent;
-    z-index: 1030;
-    padding: 0.5rem 0;
-  }
+  body { background: #e6f7ff; }
+  header { position: sticky; top: 0; background: transparent; z-index: 1030; padding: 0.5rem 0; }
   .header-wrapper {
     display: flex;
     align-items: center;
@@ -40,19 +36,24 @@
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin: 0 1rem;
+    margin: 1rem auto; /* add top and bottom margin to show blue background */
     white-space: nowrap;
   }
-  .header-wrapper .logo-text {
-    display: none;
+  .navmenu { display: flex !important; gap: 1rem; }
+  @media (max-width: 991px) {
+    .navmenu { display: none !important; }
+    .btn-donativos { margin-left: auto; }
   }
-  .header-wrapper .navmenu {
-    display: none;
+  /* reduce spacing between header and badge */
+  #hero, .hero.section { padding-top: 20px !important; }
+
+  .logo-text {
+    color: #222 !important;  /* matte black */
+    font-size: 0.875rem !important; /* approx 14px, 2px smaller */
   }
-  .header-wrapper .btn-donativos {
-    flex-shrink: 0;
-  }
+
 </style>
+
 
   <!-- Header Custom CSS -->
   <style>
@@ -71,8 +72,16 @@
   <div class="header-wrapper">
     <a href="/" class="logo d-flex align-items-center">
       <img src="assets/img/cspf.png" alt="Logo" style="height:32px;"/>
-      <span class="logo-text" style="margin-left:0.5rem;font-weight:700;color:#0d6efd;">Centro Social Paroquial de Fontelonga</span>
+      <span class="logo-text" style="margin-left:0.7rem;font-weight:700;color:#0d6efd;">Centro Social Paroquial de Fontelonga</span>
     </a>
+    <nav class="navmenu">
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contas">Contas de Gerência</a>
+      <a href="#mural">Mural das Atividades</a>
+      <a href="#contactos">Contactos</a>
+    </nav>
     <a href="donativos.html" class="btn btn-primary btn-donativos">Donativos</a>
   </div>
 </header>
