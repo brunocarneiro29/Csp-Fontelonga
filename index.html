@@ -23,7 +23,48 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-  <!-- Custom CSPF Header CSS -->
+  <!-- CSPF Header Precise CSS -->
+  <style>
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 1030;
+      border-bottom: 1px solid #e5e5e5;
+    }
+    .header-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo img {
+      height: 40px;
+      width: auto;
+    }
+    .navmenu ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+      margin: 0;
+      padding: 0;
+    }
+    .navmenu .nav-link {
+      font-weight: 500;
+      color: #333;
+      margin: 0 1rem;
+      text-decoration: none;
+    }
+    .btn-donativos {
+      padding: 0.5rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 500;
+    }
+  </style>
+
+  <!-- Custom header CSS -->
   <style>
     header {
       position: sticky;
@@ -44,16 +85,6 @@
       height: 50px;
       width: auto;
     }
-    header .logo .ms-2 div:first-child {
-      font-weight: 600;
-      font-size: 1rem;
-      color: #000;
-    }
-    header .logo .ms-2 div:last-child {
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #0d6efd;
-    }
     .navmenu ul {
       list-style: none;
       display: flex;
@@ -68,14 +99,18 @@
       text-decoration: none;
       padding: 5px 0;
     }
-    .btn-donativos {
+    .btn-donativos, .btn-getstarted {
       white-space: nowrap;
     }
   </style>
 
-  
-
-  
+  <!-- Header Custom CSS -->
+  <style>
+    header .logo img { height: 50px; width: auto; }
+    header.sticky-top { background: #fff; z-index: 1030; }
+    .navmenu ul { padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem; }
+    .navmenu .nav-link { display: block; }
+  </style>
 </head>
 
 
@@ -88,8 +123,8 @@
     <a href="/" class="logo d-flex align-items-center">
       <img src="assets/img/cspf.png" alt="Logo">
       <div class="ms-2">
-        <div>Centro Social Paroquial de</div>
-        <div>Fontelonga</div>
+        <div style="font-weight:600; font-size:1rem;">Centro Social Paroquial de</div>
+        <div style="font-weight:700; font-size:1.1rem; color:#0d6efd;">Fontelonga</div>
       </div>
     </a>
     <nav class="navmenu">
