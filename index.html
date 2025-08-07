@@ -23,154 +23,41 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-  <!-- iLanding Header CSS -->
-  <style>
-    header {
-      position: sticky;
-      top: 0;
-      background: transparent;
-      z-index: 1030;
-    }
-    .navbar-custom {
-      background: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 50px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1140px;
-      margin: 0 auto;
-    }
-    .navbar-custom .navmenu ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      margin: 0;
-      padding: 0;
-      align-items: center;
-    }
-    .navbar-custom .nav-link {
-      color: #333;
-      font-weight: 500;
-      text-decoration: none;
-    }
-    .navbar-custom .nav-link.active {
-      color: #0d6efd;
-    }
-    .navbar-custom .dropdown {
-      position: relative;
-    }
-    .navbar-custom .dropdown-toggle::after {
-      margin-left: 0.25em;
-    }
-    .navbar-custom .dropdown-menu {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      background: #fff;
-      border: 1px solid rgba(0,0,0,0.1);
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      padding: 0.5rem 0;
-      display: none;
-      min-width: 10rem;
-    }
-    .navbar-custom .dropdown:hover .dropdown-menu {
-      display: block;
-    }
-    .navbar-custom .dropdown-item {
-      padding: 0.25rem 1rem;
-      color: #333;
-      white-space: nowrap;
-    }
-    .navbar-custom .btn-getstarted {
-      padding: 0.5rem 1.5rem;
-      border-radius: 50px;
-      font-weight: 500;
-    }
-  </style>
-
-  <!-- CSPF Header Precise CSS -->
-  <style>
-    header {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      z-index: 1030;
-      border-bottom: 1px solid #e5e5e5;
-    }
-    .header-container {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 15px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header .logo img {
-      height: 40px;
-      width: auto;
-    }
-    .navmenu ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
-    .navmenu .nav-link {
-      font-weight: 500;
-      color: #333;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    .btn-donativos {
-      padding: 0.5rem 1.5rem;
-      border-radius: 50px;
-      font-weight: 500;
-    }
-  </style>
-
-  <!-- Custom header CSS -->
-  <style>
-    header {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      z-index: 1030;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .header-container {
-      max-width: 1140px;
-      margin: 0 auto;
-      padding: 10px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    header .logo img {
-      height: 50px;
-      width: auto;
-    }
-    .navmenu ul {
-      list-style: none;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      padding: 0;
-      margin: 0;
-      align-items: center;
-    }
-    .navmenu .nav-link {
-      color: #333;
-      text-decoration: none;
-      padding: 5px 0;
-    }
-    .btn-donativos, .btn-getstarted {
-      white-space: nowrap;
-    }
-  </style>
+<!-- iLanding Header CSS -->
+<style>
+  .navbar-custom {
+    background: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  .navbar-custom .navmenu ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .navbar-custom .nav-link {
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .navbar-custom .nav-link.active {
+    color: #0d6efd;
+  }
+  .btn-getstarted {
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+</style>
 
   <!-- Header Custom CSS -->
   <style>
@@ -185,37 +72,27 @@
 
 
 
-
-
 <header>
   <div class="navbar-custom">
     <a href="/" class="logo d-flex align-items-center">
-      <img src="assets/img/cspf.png" alt="Logo" style="height:40px; width:auto;">
-      <span class="ms-2 fw-bold">Centro Social Paroquial de <span style="color:#0d6efd;">Fontelonga</span></span>
+      <img src="assets/img/cspf.png" alt="Logo" style="height:40px;">
+      <span class="ms-2 fw-bold">
+        Centro Social Paroquial de <span style="color:#0d6efd;">Fontelonga</span>
+      </span>
     </a>
     <nav class="navmenu d-flex align-items-center">
       <ul>
         <li><a class="nav-link active" href="#home">Home</a></li>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#services">Services</a></li>
-        <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        <li class="dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#option1">Option 1</a></li>
-            <li><a class="dropdown-item" href="#option2">Option 2</a></li>
-            <li><a class="dropdown-item" href="#option3">Option 3</a></li>
-          </ul>
-        </li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#sobre">Sobre nós</a></li>
+        <li><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li><a class="nav-link" href="#contas">Contas de Gerência</a></li>
+        <li><a class="nav-link" href="#mural">Mural das Atividades</a></li>
+        <li><a class="nav-link" href="#contactos">Contactos</a></li>
       </ul>
     </nav>
     <a href="donativos.html" class="btn btn-primary btn-getstarted">Donativos</a>
   </div>
 </header>
-
-
 
 
 
