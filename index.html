@@ -24,9 +24,12 @@
 
 <link href="assets/css/main.css" rel="stylesheet"/>
 
-<!-- Final CSPF Header CSS -->
+
+<!-- Refined Header CSS to prevent wrapping and ensure blue sides -->
 <style>
-  body { background: #e6f7ff; }
+  body {
+    background: #e6f7ff;
+  }
   header {
     background: transparent !important;
   }
@@ -38,34 +41,30 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1140px;
-    margin: 0 auto;
+    max-width: 1000px; /* constrain width to avoid wrapping */
+    margin: 1rem auto;
   }
   .navbar-custom .navmenu ul {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem; /* reduced gap */
     margin: 0;
     padding: 0;
     align-items: center;
     white-space: nowrap;
-    overflow-x: auto;
   }
   .navbar-custom .nav-link {
     color: #333;
     font-weight: 500;
+    font-size: 0.9rem;
     text-decoration: none;
-    padding: 0.5rem;
-    flex-shrink: 0;
+    margin: 0 0.5rem; /* minimal margin */
   }
-  .navbar-custom .nav-link.active {
-    color: #0d6efd;
-  }
-  .btn-getstarted {
-    padding: 0.5rem 1.5rem;
+  .navbar-custom .btn-getstarted {
+    padding: 0.4rem 1.2rem;
     border-radius: 50px;
     font-weight: 500;
-    flex-shrink: 0;
+    white-space: nowrap;
   }
   @media (max-width: 991px) {
     .navbar-custom .navmenu {
@@ -73,6 +72,7 @@
     }
   }
 </style>
+
 
 
   <!-- Header Custom CSS -->
