@@ -23,15 +23,11 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-<!-- Corrected Header CSS -->
+
+<!-- Updated Header & Hero Spacing CSS -->
 <style>
-  header {
-    position: sticky;
-    top: 0;
-    background: transparent;
-    z-index: 1030;
-    padding: 0.5rem 0;
-  }
+  body { background: #e6f7ff; }
+  header { position: sticky; top: 0; background: transparent; z-index: 1030; padding: 0.5rem 0; }
   .header-wrapper {
     display: flex;
     align-items: center;
@@ -40,29 +36,18 @@
     padding: 0.5rem 1rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    margin: 0 1rem;
+    margin: 1rem auto; /* add top and bottom margin to show blue background */
     white-space: nowrap;
   }
-  .header-wrapper .logo-text {
-    display: none;
-  }
-  /* Show navmenu on desktop */
-  .header-wrapper .navmenu {
-    display: flex !important;
-    gap: 1rem;
-  }
-  .header-wrapper .btn-donativos {
-    flex-shrink: 0;
-  }
+  .navmenu { display: flex !important; gap: 1rem; }
   @media (max-width: 991px) {
-    .header-wrapper .navmenu {
-      display: none !important;
-    }
-    .header-wrapper .btn-donativos {
-      margin-left: auto;
-    }
+    .navmenu { display: none !important; }
+    .btn-donativos { margin-left: auto; }
   }
+  /* reduce spacing between header and badge */
+  #hero, .hero.section { padding-top: 20px !important; }
 </style>
+
 
   <!-- Header Custom CSS -->
   <style>
