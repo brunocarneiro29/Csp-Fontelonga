@@ -56,12 +56,8 @@
   <style>
     header .logo img { height: 50px; width: auto; }
     header.sticky-top { background: #fff; z-index: 1030; }
-    .navmenu.collapse { background: #fff; }
-    .navmenu ul { padding: 0; margin: 0; }
+    .navmenu ul { padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 1rem; }
     .navmenu .nav-link { display: block; }
-    @media (max-width: 991px) {
-      .navmenu { position: absolute; top: 100%; left: 0; width: 100%; }
-    }
   </style>
 
 
@@ -86,10 +82,7 @@
       <img src="assets/img/cspf.png" alt="Logo">
       <span class="sitename ms-2">Centro Social Paroquial de Fontelonga</span>
     </a>
-    <button class="btn d-lg-none mobile-nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="bi bi-list"></i>
-    </button>
-    <div class="collapse navmenu d-lg-block" id="navmenu">
+    <div class="navmenu d-block" id="navmenu">
       <ul class="list-unstyled mb-0 d-flex flex-column flex-lg-row align-items-lg-center">
         <li class="nav-item"><a href="#home" class="nav-link px-lg-3 py-2">Home</a></li>
         <li class="nav-item"><a href="#sobre" class="nav-link px-lg-3 py-2">Sobre nós</a></li>
