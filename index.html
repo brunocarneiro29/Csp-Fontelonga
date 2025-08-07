@@ -23,6 +23,46 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
+  <!-- Custom header CSS -->
+  <style>
+    header {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      z-index: 1030;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header-container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo img {
+      height: 50px;
+      width: auto;
+    }
+    .navmenu ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 0;
+      margin: 0;
+      align-items: center;
+    }
+    .navmenu .nav-link {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 0;
+    }
+    .btn-donativos, .btn-getstarted {
+      white-space: nowrap;
+    }
+  </style>
+
   <!-- Header Custom CSS -->
   <style>
     header .logo img { height: 50px; width: auto; }
@@ -35,25 +75,30 @@
 
 
 
-<header class="sticky-top">
-  <div class="header-container container d-flex align-items-center justify-content-between">
+
+<header>
+  <div class="header-container">
     <a href="/" class="logo d-flex align-items-center">
       <img src="assets/img/cspf.png" alt="Logo">
-      <span class="sitename ms-2">Centro Social Paroquial de Fontelonga</span>
+      <div class="ms-2">
+        <div style="font-weight:600; font-size:1rem;">Centro Social Paroquial de</div>
+        <div style="font-weight:700; font-size:1.1rem; color:#0d6efd;">Fontelonga</div>
+      </div>
     </a>
-    <div class="navmenu d-flex" id="navmenu">
-      <ul class="list-unstyled mb-0 d-flex flex-column flex-lg-row align-items-lg-center">
-        <li class="nav-item"><a href="#home" class="nav-link px-lg-3 py-2">Home</a></li>
-        <li class="nav-item"><a href="#sobre" class="nav-link px-lg-3 py-2">Sobre nós</a></li>
-        <li class="nav-item"><a href="#servicos" class="nav-link px-lg-3 py-2">Serviços</a></li>
-        <li class="nav-item"><a href="#contas" class="nav-link px-lg-3 py-2">Contas de Gerência</a></li>
-        <li class="nav-item"><a href="#mural" class="nav-link px-lg-3 py-2">Mural das Atividades</a></li>
-        <li class="nav-item"><a href="#contactos" class="nav-link px-lg-3 py-2">Contactos</a></li>
+    <nav class="navmenu">
+      <ul>
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#sobre">Sobre nós</a></li>
+        <li><a class="nav-link" href="#servicos">Serviços</a></li>
+        <li><a class="nav-link" href="#contas">Contas de Gerência</a></li>
+        <li><a class="nav-link" href="#mural">Mural das Atividades</a></li>
+        <li><a class="nav-link" href="#contactos">Contactos</a></li>
       </ul>
-    </div>
-    <a href="donativos.html" class="btn btn-primary btn-getstarted ms-3">Donativos</a>
+    </nav>
+    <a href="donativos.html" class="btn btn-primary btn-donativos">Donativos</a>
   </div>
 </header>
+
 
 
 
