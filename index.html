@@ -23,11 +23,12 @@
 <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"/>
 
 <link href="assets/css/main.css" rel="stylesheet"/>
-<!-- iLanding Header CSS -->
+
+<!-- Adjusted iLanding Header CSS -->
 <style>
   .navbar-custom {
     background: #fff;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
     border-radius: 50px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     display: flex;
@@ -39,15 +40,17 @@
   .navbar-custom .navmenu ul {
     list-style: none;
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     margin: 0;
     padding: 0;
     align-items: center;
+    white-space: nowrap;
   }
   .navbar-custom .nav-link {
     color: #333;
     font-weight: 500;
     text-decoration: none;
+    padding: 0.5rem;
   }
   .navbar-custom .nav-link.active {
     color: #0d6efd;
@@ -57,7 +60,15 @@
     border-radius: 50px;
     font-weight: 500;
   }
+
+  /* Hide nav menu on mobile */
+  @media (max-width: 991px) {
+    .navbar-custom .navmenu {
+      display: none;
+    }
+  }
 </style>
+
 
   <!-- Header Custom CSS -->
   <style>
