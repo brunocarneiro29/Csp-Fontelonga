@@ -82,7 +82,13 @@ a[href^="tel"]{color:#ffffff !important;text-decoration:none !important;font-wei
     padding: 0 !important;
   }
 </style>
-</head>
+<style>
+#carouselMural .carousel-item { background:#f8fbff; display:flex; align-items:center; justify-content:center; }
+#carouselMural .carousel-item img { width:100%; height:auto; max-height:500px; object-fit:contain; object-position:center; }
+@media (max-width: 576px) {
+  #carouselMural .carousel-item img { max-height: 360px; }
+}
+</style></head>
 <header>
 <div class="header-wrapper">
 <a class="logo d-flex align-items-center" href="/">
@@ -728,58 +734,37 @@ a[href^="tel"]{color:#ffffff !important;text-decoration:none !important;font-wei
 <div class="carousel slide" data-bs-interval="7000" data-bs-ride="carousel" id="carouselMural">
 <div class="carousel-inner">
 <div class="carousel-item active">
-<img alt="Santos Populares no Centro" class="d-block w-100 img-fluid" src="assets/img/s-joao-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-</div>
-</div>
-<div class="carousel-item">
-<img alt="Visita a Santiago de Compostela 2025" class="d-block w-100 img-fluid" src="assets/img/santiago-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Visita a Santiago de Compostela 2025</h5>
-<div class="barra-azul"></div>
-</div>
+<img alt="Santos Populares no Centro" class="w-100 d-block img-fluid" src="assets/img/s-joao-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
 </div>
 <div class="carousel-item">
-<img alt="Passeio de Barco 2025" class="d-block w-100 img-fluid" src="assets/img/barco.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Passeio de Barco 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<div class="carousel-item">
-<img alt="Dia do Pai 2025" class="d-block w-100 img-fluid" src="assets/img/dia-do-pai-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Dia do Pai 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<div class="carousel-item">
-<img alt="Cortejo de Carnaval 2025" class="d-block w-100 img-fluid" src="assets/img/cortejo-carnaval-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Cortejo de Carnaval 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<div class="carousel-item">
-<img alt="Visita à Rádio Ansiães 2025" class="d-block w-100 img-fluid" src="assets/img/radio-ansiaes-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Visita à Rádio Ansiães 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<div class="carousel-item">
-<img alt="Missão País 2025" class="d-block w-100 img-fluid" src="assets/img/missao-pais-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Missão País 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
-<div class="carousel-item">
-<img alt="Cantar dos Reis 2025" class="d-block w-100 img-fluid" src="assets/img/cantar-reis-2025.jpg" style="width: 100%; height: auto; max-height: 500px; object-fit: contain;"/>
-<div class="carousel-caption text-center custom-caption">
-<h5 class="titulo-slide">Cantar dos Reis 2025</h5>
-<div class="barra-azul"></div>
-</div>
-</div>
+<img alt="Visita a Santiago de Compostela 2025" class="w-100 d-block img-fluid" src="assets/img/santiago-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div><div class="carousel-item">
+<img alt="Passeio de Barco 2025" class="w-100 d-block img-fluid" src="assets/img/barco.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div><div class="carousel-item">
+<img alt="Dia do Pai 2025" class="w-100 d-block img-fluid" src="assets/img/dia-do-pai-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div><div class="carousel-item">
+<img alt="Cortejo de Carnaval 2025" class="w-100 d-block img-fluid" src="assets/img/cortejo-carnaval-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div><div class="carousel-item">
+<img alt="Visita à Rádio Ansiães 2025" class="w-100 d-block img-fluid" src="assets/img/radio-ansiaes-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div><div class="carousel-item">
+<img alt="Missão País 2025" class="w-100 d-block img-fluid" src="assets/img/missao-pais-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div><div class="carousel-item">
+<img alt="Cantar dos Reis 2025" class="w-100 d-block img-fluid" src="assets/img/cantar-reis-2025.jpg" style="max-height:500px; height:auto; width:100%; object-fit:contain; object-position:center center;"/>
+
+</div></div>
+
+
+
+
+
+
+
 </div>
 <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselMural" type="button">
 <span aria-hidden="true" class="carousel-control-prev-icon"></span>
