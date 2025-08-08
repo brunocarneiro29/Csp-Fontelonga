@@ -87,10 +87,12 @@ a[href^="tel"]{color:#ffffff !important;text-decoration:none !important;font-wei
 #carouselMural .carousel-item img { width:100%; height:auto; max-height:500px; object-fit:contain; object-position:center; }
 @media (max-width: 576px){ #carouselMural .carousel-item img { max-height:360px; } }
 </style><style>
+#carouselMural { position: relative; }
 #carouselMural .carousel-control-prev, 
-#carouselMural .carousel-control-next { z-index: 10; opacity: 1; }
-#carouselMural .carousel-control-prev-icon, 
-#carouselMural .carousel-control-next-icon { background-size: 100% 100%; }
+#carouselMural .carousel-control-next { z-index: 50; pointer-events: auto; }
+#carouselMural .carousel-inner, 
+#carouselMural .carousel-item { position: relative; }
+#carouselMural .carousel-item::before { content:''; display:none; } /* evitar overlays fantasmas */
 </style></head>
 <header>
 <div class="header-wrapper">
