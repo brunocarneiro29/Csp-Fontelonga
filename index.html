@@ -21,19 +21,47 @@
 <!-- Updated Header & Hero Spacing CSS -->
 <style>
   body { background: #e6f7ff; }
-  header { position: sticky; top: 0; background: transparent; z-index: 1030; padding: 0.5rem 0; }
+  header {
+    position: sticky;
+    top: 0;
+    background: transparent;
+    z-index: 1030;
+    padding: 0.5rem 0;
+    backdrop-filter: blur(6px);
+  }
   .header-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fff;
-    padding: 0.5rem 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #e6f7ff 100%);
+    padding: 0.75rem 1.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     margin: 1rem auto; /* add top and bottom margin to show blue background */
     white-space: nowrap;
   }
-  .navmenu { display: flex !important; gap: 1rem; }
+  .navmenu {
+    display: flex !important;
+    gap: 1rem;
+  }
+  .navmenu a {
+    color: #444;
+    font-weight: 500;
+    position: relative;
+  }
+  .navmenu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #0d83fd;
+    transition: width 0.3s;
+  }
+  .navmenu a:hover::after {
+    width: 100%;
+  }
   @media (max-width: 991px) {
     .navmenu { display: none !important; }
     .btn-donativos { margin-left: auto; }
