@@ -97,6 +97,10 @@ a[href^="tel"]{color:#ffffff !important;text-decoration:none !important;font-wei
 /* NÃO alterar o display dos .carousel-item, o Bootstrap gere isso */
 #carouselMural { position: relative; }
 #carouselMural .carousel-control-prev, #carouselMural .carousel-control-next { z-index: 5; }
+</style><style>
+#carouselMural .carousel-item img { width:100%; height:auto; max-height:520px; object-fit:contain; object-position:center; }
+@media (max-width: 576px){ #carouselMural .carousel-item img { max-height:360px; } }
+#carouselMural .carousel-control-prev, #carouselMural .carousel-control-next { top: 50%; transform: translateY(-50%); }
 </style></head>
 <header>
 <div class="header-wrapper">
