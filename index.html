@@ -107,11 +107,12 @@ a[href^="tel"]{color:inherit !important;text-decoration:none !important;font-wei
 <style>
   :root {
     --azul-principal: #1a73f2;
+    --azul-claro: #e6f7ff;
   }
 
-  /* Fundo azul-claro completo */
-  html, body {
-    background: #e6f7ff;
+  /* Fundo da página até ao topo */
+  html, body, header {
+    background: var(--azul-claro) !important;
   }
 
   /* Botões com fundo azul e texto branco */
