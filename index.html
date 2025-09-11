@@ -103,7 +103,45 @@ a[href^="tel"]{color:inherit !important;text-decoration:none !important;font-wei
 #carouselMural .carousel-item img { width:100%; height:auto; max-height:520px; object-fit:contain; object-position:center; }
 @media (max-width: 576px){ #carouselMural .carousel-item img { max-height:360px; } }
 #carouselMural .carousel-control-prev, #carouselMural .carousel-control-next { top: 50%; transform: translateY(-50%); }
-</style></head>
+</style>
+<style>
+  /* Azul unificado */
+  :root {
+    --azul-principal: #1a73f2;
+  }
+
+  /* Corrigir cores diferentes no header, botão, logotipo e textos */
+  .btn-primary,
+  .accent-text,
+  .logo-text,
+  .text-primary,
+  .company-badge,
+  .btn-cta,
+  .carousel-indicators .active,
+  .section-title hr,
+  #footer a:hover {
+    color: var(--azul-principal) !important;
+    background-color: var(--azul-principal) !important;
+    border-color: var(--azul-principal) !important;
+  }
+
+  /* Garantir consistência em links, hover, ícones, etc */
+  a,
+  a:hover,
+  .nav-link:hover,
+  .nav-link.active,
+  .bi,
+  .btn-outline-primary:hover {
+    color: var(--azul-principal) !important;
+  }
+
+  /* Cores de fundo claras (mantidas) */
+  body {
+    background: #e6f7ff;
+  }
+</style>
+
+</head>
 <header>
 <div class="header-wrapper">
 <a class="logo d-flex align-items-center" href="/">
