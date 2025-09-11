@@ -105,27 +105,23 @@ a[href^="tel"]{color:inherit !important;text-decoration:none !important;font-wei
 #carouselMural .carousel-control-prev, #carouselMural .carousel-control-next { top: 50%; transform: translateY(-50%); }
 </style>
 <style>
-  /* Azul unificado */
   :root {
     --azul-principal: #1a73f2;
   }
 
-  /* Corrigir cores diferentes no header, botão, logotipo e textos */
+  /* Botões e destaques com fundo azul */
   .btn-primary,
-  .accent-text,
-  .logo-text,
-  .text-primary,
-  .company-badge,
   .btn-cta,
   .carousel-indicators .active,
-  .section-title hr,
-  #footer a:hover {
-    color: var(--azul-principal) !important;
+  .section-title hr {
     background-color: var(--azul-principal) !important;
     border-color: var(--azul-principal) !important;
   }
 
-  /* Garantir consistência em links, hover, ícones, etc */
+  /* Texto azul */
+  .accent-text,
+  .logo-text,
+  .text-primary,
   a,
   a:hover,
   .nav-link:hover,
@@ -135,7 +131,6 @@ a[href^="tel"]{color:inherit !important;text-decoration:none !important;font-wei
     color: var(--azul-principal) !important;
   }
 
-  /* Cores de fundo claras (mantidas) */
   body {
     background: #e6f7ff;
   }
