@@ -42,12 +42,16 @@
   }
   /* reduce spacing between header and badge */
   #hero, .hero.section { padding-top: 20px !important; }
-
-  .logo-text {
-    color: #222 !important;  /* matte black */
-    font-size: 1.125rem !important; /* approx 14px, 2px smaller */
-  }
-
+  
+.logo-text {
+  color: #222 !important;
+  font-size: 1.125rem !important;
+  display: inline-block;
+  max-width: 220px; /* ajusta se necessário */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* Fix: ocultar legendas do carrossel e cor dos telefones */
 .carousel-caption{display:none !important;}
