@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A importância de manter os laços afetivos, ainda que à distância</title>
+
+  <link href="../assets/img/cspf.png" rel="icon">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/css/main.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #e6f7ff;
+      font-family: Arial, sans-serif;
+    }
+
+    .article-box {
+      background: #fff;
+      border-radius: 20px;
+      padding: 40px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .article-box h1 {
+      color: #1d3557;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .article-box p {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+      color: #333;
+    }
+
+    .btn-voltar {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <div class="article-box">
+
+      <h1>A importância de manter os laços afetivos, ainda que à distância</h1>
+
+      <p>Com o avançar do tempo, entramos numa era digital que permite encurtar distâncias. físicas. Facilmente, comunicamos com alguém que esteja do outro lado do mundo. </p>
+
+      <p>Apesar de todo o avanço tecnológico, há uma caraterística profundamente portuguesa. Sempre fomos muito ligados ao beijo e ao abraço. E talvez isso se sinta ainda mais aqui no interior, onde a população é mais envelhecida.</p>
+
+      <p>E na terceira idade, os laços afetivos tornam-se mais significativos. À medida que o tempo passa, os idosos veem o seu círculo social reduzir. Alguns familiares vivem longe, os amigos de uma vida tornam-se menos presentes e as limitações próprias da idade dificultam os encontros. Assim, os laços afetivos assumem uma importância ainda maior, tornando-se uma fonte de conforto, segurança e esperança.</p>
+     
+	 <p>Um simples telefonema tem o poder de transformar o dia do idoso. Grande parte das vezes nem é o conteúdo do telefonema. É, sim, o facto do idoso saber que ainda tem alguém e algum lugar onde realmente pertence.</p>
+
+      <p>Um desenho elaborado por um neto ou uma fotografia acompanhada de uma dedicatória são muitas das vezes os elementos suficientes para contrariar a solidão. Porque o amor verdadeiro encontra sempre caminhos para se manifestar. Quer seja através de uma chamada telefónica ou de uma visita inesperada. O essencial é que uma pessoa idosa nunca deixe de sentir que é amada, valorizada e necessária.</p>
+
+      <p>E, num mundo cada vez mais acelerado, manter os laços afetivos é uma responsabilidade. Porque aquilo que mais marca os idosos não são os bens que possuem nem os lugares que visitaram, mas sim as relações que construíram e o amor que recebem.</p>
+	  
+	 
+
+      <a href="../index.html#voz-do-lar" class="btn btn-primary btn-voltar">
+        ← Voltar à Voz do Lar
+      </a>
+
+    </div>
+  </main>
+
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
